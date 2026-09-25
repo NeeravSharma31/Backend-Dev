@@ -238,3 +238,21 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+
+
+// Find one document
+const user = await User.findOne({ username: 'john' });
+
+// Find all documents
+const allUsers = await User.find();
+
+// Find with conditions
+const admins = await User.find({ role: 'admin' });
+
+try {
+  await newUser.save();
+} catch (error) {
+  if (error.code === 11000) {
+    console.log('Duplicate key error');
+  }
+}
