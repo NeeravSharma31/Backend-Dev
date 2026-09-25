@@ -1,17 +1,24 @@
 {
-  "name": "express_demo",
+  "name": "express-demo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Express.js Core Architecture, Routing, REST API and SSR",
+  "main": "01_basic_server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node 01_basic_server.js",
+    "step1": "node 01_basic_server.js",
+    "step2": "node 02_routing.js",
+    "step3": "node 03_rest_api.js",
+    "step4": "node 04_ssr_html.js",
+    "step5": "node 05_ssr_ejs.js"
   },
-  "keywords": [],
+  "keywords": ["express", "nodejs", "rest-api", "ejs", "ssr"],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "ejs": "^6.0.1",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
