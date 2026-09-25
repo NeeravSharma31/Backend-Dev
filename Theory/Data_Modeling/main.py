@@ -59,7 +59,6 @@ class Enrollment(Base):
 # Create tables
 Base.metadata.create_all(engine)
 
-# Create
 new_student = Student(
     name="Aarav",
     email="aarav@upes.ac.in",
