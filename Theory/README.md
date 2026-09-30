@@ -1,10 +1,10 @@
-# 💻 Backend Development — Theory Modules
+# Backend Development — Theory Modules
 
 Structured collection of backend development topics covering Express.js, state management, FastAPI REST APIs, Jinja2 Server-Side Rendering, Flask microservices, and SQLAlchemy Object-Relational Mapping.
 
 ---
 
-## 📑 Module Index & Reports
+## Module Index & Reports
 
 | Unit | Topic | Framework / Tech | Directory | Report / Documentation |
 |:---:|:---|:---|:---|:---|
@@ -15,11 +15,11 @@ Structured collection of backend development topics covering Express.js, state m
 | **05** | **Flask Microservice** | Python, Flask | [`flask/`](./flask/) | [Flask README](./flask/README.md) |
 | **06** | **Data Modeling & ORM** | Python, SQLAlchemy, SQLite | [`Data_Modeling/`](./Data_Modeling/) | [ORM README](./Data_Modeling/README.md) |
 
-👉 **Full Lab Report**: [Read the Comprehensive Theory Lab Report](./Report.md)
+ **Lab Report**: [Read the Comprehensive Theory Lab Report](./Report.md)
 
 ---
 
-## 🪟 Windows Quick Start
+## Windows Quick Start
 
 ### 1. Node.js Setup
 ```powershell

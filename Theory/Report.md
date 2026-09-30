@@ -1,4 +1,4 @@
-# 📚 Comprehensive Lab Report: Backend Development Architecture & Engineering
+# Lab Report: Backend Development Architecture & Engineering
 
 This comprehensive report details the design, implementation, and analysis of backend systems across multiple languages, runtimes, and architectural patterns (Express.js, Session Management, FastAPI REST, FastAPI Jinja2 SSR, Flask Microservices, and SQLAlchemy ORM).
 
@@ -38,24 +38,6 @@ node 05_ssr_ejs.js        # EJS Templating SSR
 ```
 
 ## 6. Code
-```javascript
-// express_demo/05_ssr_ejs.js
-const express = require("express");
-const app = express();
-
-app.set("view engine", "ejs");
-
-const students = [
-    { id: 1, name: "Aarav", branch: "CSE" },
-    { id: 2, name: "Diya", branch: "ECE" },
-    { id: 3, name: "Rohan", branch: "IT" }
-];
-
-app.get("/", (req, res) => res.render("home"));
-app.get("/students", (req, res) => res.render("students", { students: students }));
-
-app.listen(3000, () => console.log("Server running on port 3000"));
-```
 
 ## 7. Observation
 - `GET http://localhost:3000/`: Displays home page with navigation links.
@@ -97,41 +79,6 @@ node app.js
 ```
 
 ## 6. Code
-```javascript
-// Sessions/app.js
-const express = require('express');
-const session = require('express-session');
-const app = express();
-
-app.use(session({
-  secret: 'mySecretKey',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { maxAge: 60000 } // 1 minute expiry
-}));
-
-app.get('/login', (req, res) => {
-  req.session.username = 'JohnDoe';
-  res.send('Session started for ' + req.session.username);
-});
-
-app.get('/profile', (req, res) => {
-  if (req.session.username) {
-    res.send('Welcome ' + req.session.username);
-  } else {
-    res.send('Please log in first.');
-  }
-});
-
-app.get('/logout', (req, res) => {
-  req.session.destroy(err => {
-    if (err) return res.send('Error destroying session');
-    res.send('Session destroyed successfully');
-  });
-});
-
-app.listen(3000, () => console.log('Server running on port 3000'));
-```
 
 ## 7. Observation
 1. Navigating to `/profile` initially returns: `"Please log in first."` (`HTTP 200`).
@@ -177,60 +124,6 @@ uvicorn main:app --reload --port 5000
 ```
 
 ## 6. Code
-```python
-# FastAPI/01_rest_api/main.py
-from fastapi import FastAPI, HTTPException, Query
-import uvicorn
-from pydantic import BaseModel
-from typing import Optional, List
-
-app = FastAPI(title="Student Management API", version="1.0.0")
-
-class Student(BaseModel):
-    id: int
-    name: str
-    branch: str
-
-class StudentCreate(BaseModel):
-    name: str
-    branch: str
-
-students: List[Student] = [
-    Student(id=1, name="Anuj", branch="CSE"),
-    Student(id=2, name="Diya", branch="ECE"),
-    Student(id=3, name="Rohan", branch="IT"),
-]
-next_id = 4
-
-@app.get("/students", response_model=List[Student])
-def list_students(branch: Optional[str] = Query(None)):
-    if branch:
-        return [s for s in students if s.branch.upper() == branch.upper()]
-    return students
-
-@app.get("/students/{student_id}", response_model=Student)
-def get_student(student_id: int):
-    for student in students:
-        if student.id == student_id:
-            return student
-    raise HTTPException(status_code=404, detail="Student not found")
-
-@app.post("/students", response_model=Student, status_code=201)
-def create_student(student: StudentCreate):
-    global next_id
-    new_student = Student(id=next_id, **student.model_dump())
-    students.append(new_student)
-    next_id += 1
-    return new_student
-
-@app.delete("/students/{student_id}", status_code=204)
-def delete_student(student_id: int):
-    for i, student in enumerate(students):
-        if student.id == student_id:
-            students.pop(i)
-            return
-    raise HTTPException(status_code=404, detail="Student not found")
-```
 
 ## 7. Observation
 - `GET /students` returns all student records in JSON format with status `200 OK`.
@@ -275,48 +168,6 @@ uvicorn main:app --reload --port 8000
 Open browser at: `http://127.0.0.1:8000`
 
 ## 6. Code
-```python
-# FastAPI/02_ssr_jinja/main.py (excerpt)
-from fastapi import FastAPI, Form, Request, status
-from fastapi.responses import RedirectResponse
-from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
-
-app = FastAPI(title="Student Details", version="1.0.0")
-templates = Jinja2Templates(directory="templates")
-app.mount("/static", StaticFiles(directory="static"), name="static")
-
-students = [
-    {"name": "Krish Pawar", "sap_id": "590017543", "batch": "B.Tech CSE Core 5"},
-    {"name": "Divyansh Panwar", "sap_id": "590018990", "batch": "B.Tech CSE Core 5"},
-]
-
-@app.get("/")
-@app.get("/students")
-async def students_page(request: Request):
-    return templates.TemplateResponse(
-        request=request,
-        name="students.html",
-        context={"students": students}
-    )
-
-@app.post("/students/add")
-async def add_student(
-    request: Request,
-    name: str = Form(...),
-    sap_id: str = Form(...),
-    batch: str = Form(...)
-):
-    name, sap_id, batch = name.strip(), sap_id.strip(), batch.strip()
-    if not sap_id.isdigit() or len(sap_id) != 9:
-        return templates.TemplateResponse(
-            request=request,
-            name="add_student.html",
-            context={"error": "SAP ID must be exactly 9 digits.", "name": name, "sap_id": sap_id, "batch": batch}
-        )
-    students.append({"name": name, "sap_id": sap_id, "batch": batch})
-    return RedirectResponse(url="/students", status_code=status.HTTP_303_SEE_OTHER)
-```
 
 ## 7. Observation
 - Visiting `/students` renders a clean table displaying existing students with custom CSS.
@@ -358,48 +209,6 @@ python app.py
 Server runs on: `http://127.0.0.1:5000/`
 
 ## 6. Code
-```python
-# flask/app.py
-from flask import Flask, jsonify
-
-app = Flask(__name__)
-
-data = {
-    "name": "John Doe",
-    "age": 30,
-    "city": "New York"
-}
-
-@app.route("/")
-def home():
-    return "Backend Server Running"
-
-@app.route("/data")
-def get_data():
-    return jsonify(data)
-
-@app.route("/html")
-def get_html():
-    return f"""
-    <!DOCTYPE html>
-    <html>
-    <head><title>Flask Backend</title></head>
-    <body style="font-family: Arial, sans-serif; padding: 20px;">
-        <h1>Backend Server Running</h1>
-        <p>Visit <a href='/data'>/data</a> for JSON response.</p>
-        <h3>User Profile:</h3>
-        <ul>
-            <li><strong>Name:</strong> {data['name']}</li>
-            <li><strong>Age:</strong> {data['age']}</li>
-            <li><strong>City:</strong> {data['city']}</li>
-        </ul>
-    </body>
-    </html>
-    """
-
-if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
-```
 
 ## 7. Observation
 - `GET /` returns plain text: `"Backend Server Running"`.
@@ -442,55 +251,6 @@ python main.py
 ```
 
 ## 6. Code
-```python
-# Data_Modeling/main.py (excerpt)
-from datetime import date
-from sqlalchemy import create_engine, Column, Integer, String, Date, ForeignKey
-from sqlalchemy.orm import declarative_base, sessionmaker, relationship
-
-engine = create_engine("sqlite:///students.db")
-Base = declarative_base()
-Session = sessionmaker(bind=engine)
-session = Session()
-
-class Department(Base):
-    __tablename__ = "departments"
-    id = Column(Integer, primary_key=True)
-    name = Column(String(100), unique=True, nullable=False)
-    students = relationship("Student", back_populates="department")
-    courses = relationship("Course", back_populates="department")
-
-class Student(Base):
-    __tablename__ = "students"
-    id = Column(Integer, primary_key=True)
-    name = Column(String(100), nullable=False)
-    email = Column(String(100), unique=True, nullable=False)
-    branch = Column(String(50))
-    enrollment_date = Column(Date)
-    department_id = Column(Integer, ForeignKey("departments.id"))
-    department = relationship("Department", back_populates="students")
-    enrollments = relationship("Enrollment", back_populates="student")
-
-class Course(Base):
-    __tablename__ = "courses"
-    id = Column(String(10), primary_key=True)
-    title = Column(String(100), nullable=False)
-    credits = Column(Integer, nullable=False)
-    department_id = Column(Integer, ForeignKey("departments.id"))
-    department = relationship("Department", back_populates="courses")
-    enrollments = relationship("Enrollment", back_populates="course")
-
-class Enrollment(Base):
-    __tablename__ = "enrollments"
-    student_id = Column(Integer, ForeignKey("students.id"), primary_key=True)
-    course_id = Column(String(10), ForeignKey("courses.id"), primary_key=True)
-    semester = Column(String(20))
-    grade = Column(String(2))
-    student = relationship("Student", back_populates="enrollments")
-    course = relationship("Course", back_populates="enrollments")
-
-Base.metadata.create_all(engine)
-```
 
 ## 7. Observation
 - `Base.metadata.create_all(engine)` automatically creates `students.db` containing `departments`, `students`, `courses`, and `enrollments` tables.

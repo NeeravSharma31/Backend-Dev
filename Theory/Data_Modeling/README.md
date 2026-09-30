@@ -40,3 +40,11 @@ python main.py
                                                      | department_id   |
                                                      +-----------------+
 ```
+
+Main2.py
+
+Data validation 
+Fetch method uses get, error 405: Method not allowed
+
+Using post:
+Json data passed, validation works 
