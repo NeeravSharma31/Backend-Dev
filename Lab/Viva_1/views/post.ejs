@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= post.title %> - Simple CMS</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #222;
+            line-height: 1.7;
+        }
+        header {
+            margin-bottom: 25px;
+        }
+        .back-link {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .back-link:hover { text-decoration: underline; }
+        h1 {
+            font-size: 32px;
+            margin: 0 0 10px 0;
+            color: #111;
+            line-height: 1.3;
+        }
+        .meta-section {
+            color: #555;
+            font-size: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .meta-section p {
+            margin: 2px 0;
+        }
+        .author-name {
+            font-weight: 600;
+            color: #333;
+        }
+        .post-content {
+            font-size: 17px;
+            white-space: pre-wrap;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/posts" class="back-link">&larr; Back to All Posts</a>
+        <h1><%= post.title %></h1>
+        <div class="meta-section">
+            <p>By <span class="author-name"><%= post.author %></span></p>
+            <p><%= formatDate(post.createdAt) %></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="post-content"><%= post.content %></div>
+    </main>
+</body>
+</html>

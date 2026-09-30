@@ -1,0 +1,18 @@
+{
+  "name": "viva_1",
+  "version": "1.0.0",
+  "description": "Simple CMS - Blog Content Management System for Backend Development Lab Examination",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["cms", "express", "mongodb", "ejs"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "mongodb": "^7.6.0"
+  }
+}
