@@ -20,8 +20,8 @@ A structured curriculum repository containing Theory lectures, architectural dem
 
 1. **[Exp 1: HTML5 Foundation](Lab/Exp_1/Report.md)**
 <!-- 2. **[Exp 12: Express Middleware](Lab/Exp_12/)** -->
-3. **[Exp 13: MongoDB & Mongoose](Lab/Exp_13/Report.md)**
+3. **[Exp 13: MongoDB & Mongoose](Lab/Exp_1S3/Report.md)**
 
 ## Examinations
 
-4. **[Lab Exam 01: Simple CMS (Express + EJS + MongoDB)](Lab/Viva_1/Report.md):** [Report](Lab/Viva_1/Report.md) | [Code](Lab/Viva_1/)
+4. **[Lab Exam 01: Simple CMS (Express + EJS + MongoDB)]:** [Report](Lab/Viva_1/Report.md) | [Code](Lab/Viva_1/)
