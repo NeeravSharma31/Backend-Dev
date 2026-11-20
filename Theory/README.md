@@ -1,3 +1,4 @@
+{% raw %}
 # Backend Development — Theory Modules
 
 Structured collection of backend development topics covering Express.js, state management, FastAPI REST APIs, Jinja2 Server-Side Rendering, Flask microservices, and SQLAlchemy Object-Relational Mapping.
@@ -38,3 +39,4 @@ python -m venv venv
 # Install all Python backend dependencies
 pip install -r requirements.txt
 ```
+{% endraw %}
