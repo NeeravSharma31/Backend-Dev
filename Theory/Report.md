@@ -1,3 +1,4 @@
+{% raw %}
 # Lab Report: Backend Development Architecture & Engineering
 
 This comprehensive report details the design, implementation, and analysis of backend systems across multiple languages, runtimes, and architectural patterns (Express.js, Session Management, FastAPI REST, FastAPI Jinja2 SSR, Flask Microservices, and SQLAlchemy ORM).
@@ -259,3 +260,4 @@ python main.py
 ## 8. Challenges
 - **SQLite Foreign Key Enforcement**: SQLite by default does not enforce foreign keys unless `PRAGMA foreign_keys = ON;` is issued on the connection. Handled cleanly at the ORM layer.
 - **SQLAlchemy 2.0 Declarative Base**: Migrated from legacy `sqlalchemy.ext.declarative` import to modern `from sqlalchemy.orm import declarative_base`.
+{% endraw %}
