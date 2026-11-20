@@ -68,7 +68,7 @@ Open browser at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 1. `Jinja2Templates(directory="templates")` points FastAPI to the template folder.
 2. A route handler returns `TemplateResponse(request=request, name=..., context={...})`; Jinja2 renders placeholders into static HTML and sends `Content-Type: text/html`.
 3. The `request` object is mandatory so Jinja2 can resolve relative static paths via `url_for('static', path='style.css')`.
-4. The table loop uses Jinja2's `{% for %} … {% else %} … {% endfor %}`, which cleanly handles the empty list condition.
+4. The table loop uses Jinja2's {% raw %}`{% for %} … {% else %} … {% endfor %}`{% endraw %}, which cleanly handles the empty list condition.
 
 ---
 
