@@ -31,3 +31,7 @@ desktop.ini
 .idea/
 *.swp
 *.swo
+
+/Study/
+*/Study/
+**/Study
