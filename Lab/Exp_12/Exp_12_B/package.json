@@ -1,0 +1,28 @@
+{
+  "name": "session-cookie-lab",
+  "version": "1.0.0",
+  "description": "Experiment 12 B: Using Node.js to Manage Sessions & Cookies",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "session-demo": "node Source/session-example.js",
+    "cookie-demo": "node Source/cookie-example.js",
+    "unified": "node server.js",
+    "exercise1": "node exercise1-login.js",
+    "exercise2": "node exercise2-todo.js"
+  },
+  "keywords": [
+    "express",
+    "session",
+    "cookie",
+    "state-management"
+  ],
+  "author": "Student",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.22.3",
+    "express-session": "^1.19.0"
+  }
+}

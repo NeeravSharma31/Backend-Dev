@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; background-color: #f4f4f4; }
+    .container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    h1 { color: #333; }
+    .info { color: #666; }
+    nav a { margin-right: 15px; color: #0066cc; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="/home">Home</a>
+      <a href="/users">Users</a>
+      <a href="/timetable">Timetable</a>
+      <a href="/register-student">Register Student</a>
+    </nav>
+    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+    <h1><%= heading %></h1>
+    <p class="info"><%= message %></p>
+    <p>Current Time: <%= new Date().toLocaleString() %></p>
+  </div>
+</body>
+</html>

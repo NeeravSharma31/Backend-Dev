@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-express-lab",
+  "version": "1.0.0",
+  "description": "Experiment 12 A: Node.js, Express.js, and EJS Templating",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test-script": "node script.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "ejs",
+    "nodemon"
+  ],
+  "author": "Student",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.22.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

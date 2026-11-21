@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session-Based To-Do List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: <%= theme === 'dark' ? '#1e1e1e' : '#f9f9f9' %>;
+      color: <%= theme === 'dark' ? '#f0f0f0' : '#222' %>;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid <%= theme === 'dark' ? '#444' : '#eee' %>;
+      padding-bottom: 10px;
+    }
+    .theme-btn {
+      padding: 6px 12px;
+      background: <%= theme === 'dark' ? '#f0f0f0' : '#333' %>;
+      color: <%= theme === 'dark' ? '#1e1e1e' : '#fff' %>;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    .todo-form {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .todo-form input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .todo-form button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .todo-list {
+      list-style: none;
+      padding: 0;
+    }
+    .todo-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+      margin-bottom: 8px;
+      background: <%= theme === 'dark' ? '#2d2d2d' : '#fff' %>;
+      border: 1px solid <%= theme === 'dark' ? '#444' : '#ddd' %>;
+      border-radius: 4px;
+    }
+    .del-btn {
+      background: #dc3545;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .badge {
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Session-Based To-Do List</h2>
+    <a href="/toggle-theme" class="theme-btn">Switch to <%= theme === 'dark' ? 'Light' : 'Dark' %> Mode</a>
+  </div>
+  <p class="badge">Items are saved in your personal session. Other browsers will have their own independent list.</p>
+
+  <form action="/add" method="POST" class="todo-form">
+    <input type="text" name="todoItem" placeholder="What needs to be done?" required />
+    <button type="submit">Add Task</button>
+  </form>
+
+  <ul class="todo-list">
+    <% if (todos.length > 0) { %>
+      <% todos.forEach(function(item) { %>
+        <li class="todo-item">
+          <span><%= item.text %></span>
+          <form action="/delete" method="POST" style="margin:0;">
+            <input type="hidden" name="id" value="<%= item.id %>" />
+            <button type="submit" class="del-btn">Delete</button>
+          </form>
+        </li>
+      <% }); %>
+    <% } else { %>
+      <li style="text-align: center; color: #888; padding: 20px;">No items yet. Add one above!</li>
+    <% } %>
+  </ul>
+</body>
+</html>

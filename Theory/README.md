@@ -15,14 +15,20 @@ Structured collection of backend development topics covering Express.js, state m
 | **04** | **FastAPI Jinja2 SSR** | Python, FastAPI, Jinja2 | [`FastAPI/02_ssr_jinja/`](./FastAPI/02_ssr_jinja/) | [SSR README](./FastAPI/02_ssr_jinja/README.md) |
 | **05** | **Flask Microservice** | Python, Flask | [`flask/`](./flask/) | [Flask README](./flask/README.md) |
 | **06** | **Data Modeling & ORM** | Python, SQLAlchemy, SQLite | [`Data_Modeling/`](./Data_Modeling/) | [ORM README](./Data_Modeling/README.md) |
+| **Assignment 1** | **Web Storage Notes App** | HTML5, CSS3, JS, localStorage, sessionStorage, JSON | [`Assignment_1/`](./Assignment_1/) | [Assignment 1 Report](./Assignment_1/Report.md) |
 
- **Lab Report**: [Read the Comprehensive Theory Lab Report](./Report.md)
+👉 **Full Lab Report**: [Read the Comprehensive Theory Lab Report](./Report.md)
 
 ---
 
 ## Windows Quick Start
 
-### 1. Node.js Setup
+### 1. Web Storage Notes App (Assignment 1)
+```powershell
+Start-Process "D:\Backend\Backend-Dev\Theory\Assignment_1\index.html"
+```
+
+### 2. Node.js Setup
 ```powershell
 cd express_demo
 npm install
@@ -30,7 +36,7 @@ npm run step1 # runs 01_basic_server.js
 npm run step5 # runs 05_ssr_ejs.js
 ```
 
-### 2. Python Setup (Virtual Environment)
+### 3. Python Setup (Virtual Environment)
 ```powershell
 # Create & activate Windows virtual environment
 python -m venv venv
