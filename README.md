@@ -24,5 +24,7 @@ A structured curriculum repository containing Theory lectures, architectural dem
    - **Part A (Express & EJS):** [Report](Lab/Exp_12/Exp_12_A/Report.md) | [Code](Lab/Exp_12/Exp_12_A/)
    - **Part B (Sessions & Cookies):** [Report](Lab/Exp_12/Exp_12_B/Report.md) | [Code](Lab/Exp_12/Exp_12_B/)
 3. **[Exp 13: MongoDB & Mongoose](Lab/Exp_13/Report.md)**
+4. **[Exp 15: Django To-Do Application (MVT, SQLite & Static Files)](Lab/Exp_15/Report.md):** [Report](Lab/Exp_15/Report.md) | [Code](Lab/Exp_15/django_todo_app/)
+
 4. **[Lab Exam 01: Simple CMS (Express + EJS + MongoDB)](Lab/Viva_1/Report.md):** [Report](Lab/Viva_1/Report.md) | [Code](Lab/Viva_1/)
-5. **[Exp 15: Django To-Do Application (MVT, SQLite & Static Files)](Lab/Exp_15/Report.md):** [Report](Lab/Exp_15/Report.md) | [Code](Lab/Exp_15/django_todo_app/)
+
