@@ -1,0 +1,10 @@
+<nav class="navbar">
+    <a href="{% url 'task_list' %}" class="nav-brand">
+        <span>📝</span> Django To-Do
+    </a>
+    <ul class="nav-links">
+        <li><a href="{% url 'task_list' %}">All Tasks</a></li>
+        <li><a href="{% url 'add_task' %}">+ Add Task</a></li>
+        <li><a href="/admin/" target="_blank">Admin Panel</a></li>
+    </ul>
+</nav>
