@@ -1,3 +1,4 @@
+{% raw %}
 # Lab Report: Experiment 15 — Django To-Do Application
 
 ---
@@ -267,3 +268,4 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 3. **Static File Resolution**:
    - *Challenge*: Static files failed to load when templates were accessed outside the default root.
    - *Solution*: Configured both app-level `todo/static/todo/` directory and project-level `STATICFILES_DIRS = [BASE_DIR / 'static']` in `settings.py`, and loaded files with `{% load static %}`.
+{% endraw %}

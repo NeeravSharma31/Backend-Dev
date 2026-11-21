@@ -1,3 +1,4 @@
+{% raw %}
 # Experiment 15: Django To-Do Application (CRUD & Static Files)
 
 A complete, responsive To-Do application built using the **Django** web framework (Python), **SQLite** database, **MVT (Model-View-Template)** architecture, and **Django Static Files**.
@@ -97,3 +98,4 @@ django_todo_app/
 └── static/todo/                # Project-level static files
     └── style.css
 ```
+{% endraw %}
