@@ -1,4 +1,4 @@
----
+﻿---
 title: "Lecture 6: Cookies and Query Strings"
 layout: default
 ---
@@ -7,9 +7,9 @@ layout: default
 
 **Course:** Backend Development, Unit 1
 **Lecture:** 6, Managing Server-side Session, Cookie and State Management (CO1)
-**Student:** Krish Pawar · B.Tech CSE · SAP ID 590017543 · UPES Dehradun
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· SAP ID 590018263 Â· UPES Dehradun
 
-**Source:** [`cookies.js`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-06/cookies-querystrings/cookies.js) · [`querystring.js`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-06/cookies-querystrings/querystring.js)
+**Source:** [`cookies.js`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-06/cookies-querystrings/cookies.js) Â· [`querystring.js`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-06/cookies-querystrings/querystring.js)
 
 The sessions part of this lecture is in a separate report: [Lecture 6: Sessions with express-session](../sessions/report.md).
 
@@ -342,3 +342,5 @@ Welcome &lt;script&gt;alert(1)&lt;/script&gt;, your role is admin
 ## 9. Result
 
 Cookies were set, read and deleted, and DevTools confirmed every security attribute: `httpOnly` cookies were hidden from `document.cookie`, the token had `Secure` and `SameSite=Strict`, and `clearCookie` removed the cookie by expiring it. The security check found two real problems: plain cookies can be changed by the user (fixed with signed cookies, tampering now returns 400) and the lecture's `/welcome` route allowed XSS through the query string (fixed by escaping, the script no longer runs).
+
+

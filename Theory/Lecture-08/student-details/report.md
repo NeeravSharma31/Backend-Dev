@@ -1,4 +1,4 @@
----
+﻿---
 title: "Lecture 8: Student Details, FastAPI Server-Side Rendering"
 layout: default
 ---
@@ -7,9 +7,9 @@ layout: default
 
 **Course:** Backend Development, Unit 1
 **Lecture:** 8, Server-Side Rendering and Templating Engines
-**Student:** Krish Pawar · B.Tech CSE · SAP ID 590017543 · Batch 5 · UPES Dehradun
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· SAP ID 590018263 Â· Batch 5 Â· UPES Dehradun
 
-**Source:** [`main.py`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-08/student-details/main.py) · [`templates/`](https://github.com/Krish252616/backend-development/tree/main/Theory/Lecture-08/student-details/templates) · [`static/style.css`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-08/student-details/static/style.css)
+**Source:** [`main.py`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-08/student-details/main.py) Â· [`templates/`](https://github.com/NeeravSharma31/Backend-Dev/tree/main/Theory/Lecture-08/student-details/templates) Â· [`static/style.css`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-08/student-details/static/style.css)
 
 ---
 
@@ -49,15 +49,15 @@ Open http://127.0.0.1:8000.
 
 ```
 student-details/
-├── main.py                 FastAPI app and routes
-├── report.md               this report
-├── requirements.txt
-├── templates/
-│   ├── base.html           shared layout (header, nav, footer)
-│   ├── students.html       the table
-│   └── add_student.html    the form
-└── static/
-    └── style.css
+â”œâ”€â”€ main.py                 FastAPI app and routes
+â”œâ”€â”€ report.md               this report
+â”œâ”€â”€ requirements.txt
+â”œâ”€â”€ templates/
+â”‚   â”œâ”€â”€ base.html           shared layout (header, nav, footer)
+â”‚   â”œâ”€â”€ students.html       the table
+â”‚   â””â”€â”€ add_student.html    the form
+â””â”€â”€ static/
+    â””â”€â”€ style.css
 ```
 
 ## 5. How the rendering works
@@ -140,8 +140,8 @@ $ curl -s 127.0.0.1:8000/students
 ...
     <tbody>
       <tr>
-        <td>Krish Pawar</td>
-        <td class="mono">590017543</td>
+        <td>Neerav Kumar Sharma</td>
+        <td class="mono">590018263</td>
 ...
 ```
 
@@ -167,3 +167,5 @@ $ curl -s 127.0.0.1:8000/students
 ## 10. Result
 
 The table and the form are rendered on the server with Jinja2, shared layout comes from `base.html`, every form field is validated on the server, and a successful save redirects back to the updated table.
+
+

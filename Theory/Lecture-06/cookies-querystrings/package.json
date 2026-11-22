@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "cookies-querystrings",
   "version": "1.0.0",
   "description": "Lecture 6: cookies with cookie-parser and query strings with req.query",
@@ -8,7 +8,7 @@
     "query": "node querystring.js"
   },
   "keywords": [],
-  "author": "Krish Pawar",
+  "author": "Neerav Kumar Sharma",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
@@ -16,3 +16,4 @@
     "express": "^5.2.1"
   }
 }
+

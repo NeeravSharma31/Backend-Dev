@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+﻿{% extends "base.html" %}
 
 {% block title %}Add student | Student Details{% endblock %}
 
@@ -18,7 +18,7 @@
       <label for="name">Full name</label>
       <input type="text" id="name" name="name"
              value="{{ name | default('', true) }}"
-             placeholder="Krish Pawar"
+             placeholder="Neerav Kumar Sharma"
              required minlength="2" maxlength="60" autocomplete="name">
     </div>
 
@@ -26,7 +26,7 @@
       <label for="sap_id">SAP ID</label>
       <input type="text" id="sap_id" name="sap_id"
              value="{{ sap_id | default('', true) }}"
-             placeholder="590017543"
+             placeholder="590018263"
              required pattern="[0-9]{9}"
              title="Exactly 9 digits"
              inputmode="numeric">
@@ -54,3 +54,4 @@
 
   </form>
 {% endblock %}
+

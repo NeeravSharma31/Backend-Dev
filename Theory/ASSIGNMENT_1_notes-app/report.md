@@ -1,4 +1,4 @@
----
+﻿---
 title: "Assignment 01: Notes App with localStorage"
 layout: default
 ---
@@ -8,8 +8,8 @@ layout: default
 **Course:** Backend Development, Unit 1
 **Lecture:** L07, LocalStorage, SessionStorage and JSON
 **Task:** Section 12, Final Task: Build a Notes App
-**Student:** Krish
-**SAP ID:** 590017543
+**Student:** Neerav
+**SAP ID:** 590018263
 
 ---
 
@@ -29,14 +29,14 @@ Optional: to serve it like a real website, run `python -m http.server 8000` insi
 
 ```
 notes-app/
-├── index.html        Page structure (form, toolbar, notes list)
-├── style.css         Layout, light and dark theme, mobile layout
-├── app.js            All logic: storage helpers, CRUD, render, stretch goals
-├── report.md         This report
-└── screenshots/
-    ├── light.png
-    ├── dark.png
-    └── mobile.png
+â”œâ”€â”€ index.html        Page structure (form, toolbar, notes list)
+â”œâ”€â”€ style.css         Layout, light and dark theme, mobile layout
+â”œâ”€â”€ app.js            All logic: storage helpers, CRUD, render, stretch goals
+â”œâ”€â”€ report.md         This report
+â””â”€â”€ screenshots/
+    â”œâ”€â”€ light.png
+    â”œâ”€â”€ dark.png
+    â””â”€â”€ mobile.png
 ```
 
 ## 4. Requirements Checklist
@@ -220,3 +220,4 @@ As explained in Section 13 of the tutorial, localStorage is useful but is **not 
 ## 12. Conclusion
 
 The app meets all must-have requirements and all stretch goals of Task 12. It shows the full localStorage workflow from L07: saving objects with `JSON.stringify`, reading them back with `JSON.parse`, handling missing or corrupt data safely, and using localStorage (not sessionStorage) for data that must survive a browser restart.
+

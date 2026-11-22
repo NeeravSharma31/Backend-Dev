@@ -1,4 +1,4 @@
----
+﻿---
 title: "Lecture 6: Sessions with express-session"
 layout: default
 ---
@@ -7,9 +7,9 @@ layout: default
 
 **Course:** Backend Development, Unit 1
 **Lecture:** 6, Managing Server-side Session, Cookie and State Management
-**Student:** Krish Pawar · B.Tech CSE · SAP ID 590017543 · UPES Dehradun
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· SAP ID 590018263 Â· UPES Dehradun
 
-**Source:** [`app.js`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-06/sessions/app.js)
+**Source:** [`app.js`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-06/sessions/app.js)
 
 The cookies and query strings part of this lecture is in a separate report: [Lecture 6: Cookies and Query Strings](../cookies-querystrings/report.md).
 
@@ -126,3 +126,5 @@ The cookie holds only the signed session ID (`s%3A...`), not `JohnDoe`. It is `H
 ## 8. Result
 
 The server remembers the user between requests through a server-side session and a signed, HttpOnly `connect.sid` cookie. Login, profile and logout behave as expected, and the tests showed the two main limits of the default setup: sessions are lost on restart and expire after one minute.
+
+

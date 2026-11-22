@@ -1,4 +1,4 @@
----
+﻿---
 title: "Experiment 2: Create a web page with all types of Cascading Style Sheets"
 layout: default
 ---
@@ -7,11 +7,11 @@ layout: default
 
 **Course:** Backend Development Lab  
 **Course Outcome Mapped:** CO2 (Create and build web pages and applications)  
-**Student:** Krish Pawar · B.Tech CSE · SAP ID 590017543 · UPES Dehradun  
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· SAP ID 590018263 Â· UPES Dehradun  
 **Date:** 14 October 2026
 
 **Live pages:** [All Experiment 2 pages](./index.html)  
-**Source:** [`LAB/EXP-2` on GitHub](https://github.com/Krish252616/backend-development/tree/main/LAB/EXP-2)
+**Source:** [`LAB/EXP-2` on GitHub](https://github.com/NeeravSharma31/Backend-Dev/tree/main/Lab/EXP-2)
 
 ---
 
@@ -396,3 +396,5 @@ CSS controls how every page looks, and knowing the cascade is what makes it pred
 3. MDN Web Docs: *CSS flexible box layout*. <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout>
 4. MDN Web Docs: *CSS grid layout*. <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout>
 5. MDN Web Docs: *Using CSS transitions*. <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions>
+
+

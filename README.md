@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://neeravsharma31.github.io/Backend-Dev/"><img src="https://img.shields.io/badge/Live_site-GitHub_Pages-222222?style=flat-square&logo=githubpages&logoColor=white" alt="Live site"></a>
-  <a href="https://github.com/NeeravSharma31"><img src="https://img.shields.io/badge/Author-Krish_Pawar-0A66C2?style=flat-square&logo=github&logoColor=white" alt="Author"></a>
+  <a href="https://github.com/NeeravSharma31"><img src="https://img.shields.io/badge/Author-Neerav_Kumar_Sharma-0A66C2?style=flat-square&logo=github&logoColor=white" alt="Author"></a>
   <img src="https://img.shields.io/badge/Lab_experiments-6-2E7D32?style=flat-square" alt="Lab experiments">
   <img src="https://img.shields.io/badge/Theory_projects-8-B45309?style=flat-square" alt="Theory projects">
   <img src="https://img.shields.io/badge/Assignments-2-6A1B9A?style=flat-square" alt="Assignments">
@@ -63,11 +63,11 @@ Each lecture folder is named after the lecture it belongs to: `Theory/Lecture-03
 | # | Assignment | Topic | Report | Source |
 |:---:|---|---|:---:|:---:|
 | **01** | Notes app with localStorage | L07: localStorage, sessionStorage and JSON | [Report](./Theory/ASSIGNMENT_1_notes-app/report.md) | [`Theory/ASSIGNMENT_1_notes-app`](./Theory/ASSIGNMENT_1_notes-app) |
-| **02** | PostgreSQL as SQL + NoSQL: working with JSONB | Unit 2: Database Management | [Report](./Theory/590017543-assignment2.md) | [`Theory/590017543-assignment2.md`](./Theory/590017543-assignment2.md) |
+| **02** | PostgreSQL as SQL + NoSQL: working with JSONB | Unit 2: Database Management | [Report](./Theory/590018263-assignment2.md) | [`Theory/590018263-assignment2.md`](./Theory/590018263-assignment2.md) |
 
 **Assignment 01:** add, edit, delete and complete notes that stay saved after a refresh, plus search, categories, JSON import and export, dark mode and drag to reorder. Frontend only, no server needed. [Live app](https://neeravsharma31.github.io/Backend-Dev/Theory/ASSIGNMENT_1_notes-app/) Â· [Screenshots](./Theory/ASSIGNMENT_1_notes-app/report.md#10-screenshots)
 
-**Assignment 02:** a product catalog with fixed columns and one `jsonb` column, JSONB operators (`->`, `->>`, `@>`, `?`), a GIN index compared on 5 and 200,000 rows, and the same queries in MongoDB. [Index results](./Theory/590017543-assignment2.md#task-6-index-and-compare)
+**Assignment 02:** a product catalog with fixed columns and one `jsonb` column, JSONB operators (`->`, `->>`, `@>`, `?`), a GIN index compared on 5 and 200,000 rows, and the same queries in MongoDB. [Index results](./Theory/590018263-assignment2.md#task-6-index-and-compare)
 
 ---
 
@@ -104,7 +104,7 @@ backend-development/
 â”‚   â”‚   â”œâ”€â”€ student-details/  FastAPI + Jinja2 SSR with a form
 â”‚   â”‚   â””â”€â”€ ssr-python/       FastAPI + Jinja2 hello world
 â”‚   â”œâ”€â”€ ASSIGNMENT_1_notes-app/   Assignment 01: notes app and report
-â”‚   â”œâ”€â”€ 590017543-assignment2.md  Assignment 02: PostgreSQL JSONB
+â”‚   â”œâ”€â”€ 590018263-assignment2.md  Assignment 02: PostgreSQL JSONB
 â”‚   â””â”€â”€ requirements.txt      Python packages for the Theory projects
 â”‚
 â””â”€â”€ .gitignore
@@ -229,6 +229,9 @@ On macOS, port 5000 may be taken by AirPlay Receiver. If the Flask demo will not
 ---
 
 <p align="center">
-  <sub>Krish Pawar &nbsp;|&nbsp; B.Tech CSE, UPES Dehradun</sub>
+  <sub>Neerav Kumar Sharma &nbsp;|&nbsp; B.Tech CSE, UPES Dehradun</sub>
 </p>
+
+
+
 

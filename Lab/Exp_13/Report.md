@@ -1,4 +1,4 @@
----
+﻿---
 title: "Experiment: User management with MongoDB and Mongoose"
 layout: default
 ---
@@ -6,7 +6,7 @@ layout: default
 # Experiment: Build a user management system with MongoDB and Mongoose
 
 **Course:** Backend Development Lab
-**Student:** Krish Pawar · B.Tech CSE · UPES Dehradun · 590017543
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· UPES Dehradun Â· 590018263
 **Date:** 19 September 2026
 
 **Source:** [`server.js`](./server.js)
@@ -77,11 +77,11 @@ driver and provides three things the raw driver does not:
 ### 4.3 The three-layer chain
 
 ```
-Schema  →  defines the shape of a document
-   ↓
-Model   →  compiled from the schema; the interface for queries
-   ↓
-Document → a single instance created from the model
+Schema  â†’  defines the shape of a document
+   â†“
+Model   â†’  compiled from the schema; the interface for queries
+   â†“
+Document â†’ a single instance created from the model
 ```
 
 In code:
@@ -178,7 +178,7 @@ server start-up so every user would share the same timestamp.
 | POST | `/login` | `User.findOne({ username })` |
 | GET | `/users` | `User.find()`: no filter, returns all |
 
-Every database call is `await`ed inside a `try…catch`, because database operations are
+Every database call is `await`ed inside a `tryâ€¦catch`, because database operations are
 asynchronous and can fail.
 
 ### 6.4 Handling duplicates
@@ -302,4 +302,4 @@ hashing before this pattern is used anywhere real.
 
 ---
 
-[← Back to repository index](../../README.md)
+[â† Back to repository index](../../README.md)

@@ -1,18 +1,24 @@
-/* ==========================================================================
-   Backend Development portfolio, calm version
-   One light theme, system fonts, no scripts and no animation.
+﻿/* ==========================================================================
+   Backend Development portfolio
+   Palette:
+     --cream:   #FDF4D2 (rgb 253, 244, 210)
+     --blue:    #B0CDE6 (rgb 176, 205, 230)
+     --lavender:#A290B7 (rgb 162, 144, 183)
+     --rose:    #946D6D (rgb 148, 109, 109)
    ========================================================================== */
 
 :root {
-  --bg: #f5f7f9;
+  --bg: #FDF4D2;
   --surface: #ffffff;
-  --ink: #17202a;
-  --soft: #56636f;
-  --rule: #dce2e8;
-  --accent: #1b4965;
-  --accent-dark: #12344a;
-  --tint: #e8eff4;
-  --focus: #d99a1c;
+  --ink: #322525;
+  --soft: #665050;
+  --rule: #e8dcb8;
+  --accent: #946D6D;
+  --accent-dark: #785252;
+  --accent-subtle: #A290B7;
+  --tint: #B0CDE6;
+  --tint-soft: rgba(176, 205, 230, 0.35);
+  --focus: #946D6D;
 
   --serif: Georgia, "Times New Roman", serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -37,7 +43,7 @@ h1, h2, h3, p { margin: 0; }
 a { color: var(--accent); }
 
 :focus-visible {
-  outline: 3px solid var(--focus);
+  outline: 3px solid var(--accent-subtle);
   outline-offset: 2px;
 }
 
@@ -61,8 +67,13 @@ a { color: var(--accent); }
 /* ---------- Header ---------- */
 
 .site-header {
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--rule);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .bar {
@@ -76,25 +87,40 @@ a { color: var(--accent); }
 
 .brand {
   font-weight: 700;
-  color: var(--ink);
+  color: var(--accent-dark);
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 .site-header nav { display: flex; gap: 1.5rem; font-size: 0.95rem; }
 
-.site-header nav a { color: var(--soft); text-decoration: none; }
+.site-header nav a {
+  color: var(--soft);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
 
-.site-header nav a:hover { color: var(--accent); text-decoration: underline; }
+.site-header nav a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
 
 /* ---------- Hero ---------- */
 
 .hero {
   padding: clamp(3rem, 8vw, 5.5rem) 0 clamp(2.5rem, 6vw, 4rem);
-  background: var(--surface);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(253, 244, 210, 0.9) 100%);
   border-bottom: 1px solid var(--rule);
 }
 
-.kicker { font-size: 0.95rem; color: var(--soft); }
+.kicker {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-subtle);
+}
 
 h1 {
   margin-top: 0.75rem;
@@ -102,6 +128,7 @@ h1 {
   font-size: clamp(2.4rem, 6.5vw, 4rem);
   line-height: 1.1;
   letter-spacing: -0.015em;
+  color: var(--ink);
 }
 
 .lead {
@@ -115,25 +142,38 @@ h1 {
 
 .button {
   display: inline-block;
-  padding: 0.65rem 1.2rem;
+  padding: 0.65rem 1.25rem;
   border: 1px solid var(--accent);
-  border-radius: 6px;
+  border-radius: 8px;
   background: var(--accent);
   color: #fff;
   font-weight: 600;
   line-height: 1.4;
   text-decoration: none;
+  box-shadow: 0 2px 4px rgba(148, 109, 109, 0.2);
+  transition: all 0.2s ease;
 }
 
-.button:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
+.button:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+  box-shadow: 0 4px 8px rgba(120, 82, 82, 0.25);
+}
 
-.button.ghost { background: transparent; color: var(--accent); }
+.button.ghost {
+  background: transparent;
+  color: var(--accent);
+  box-shadow: none;
+}
 
-.button.ghost:hover { background: var(--tint); }
+.button.ghost:hover {
+  background: var(--tint-soft);
+  color: var(--accent-dark);
+}
 
 /* ---------- Sections ---------- */
 
-.section { padding-block: clamp(2.5rem, 6vw, 4rem) 0; scroll-margin-top: 1rem; }
+.section { padding-block: clamp(2.5rem, 6vw, 4rem) 0; scroll-margin-top: 4.5rem; }
 
 .section:last-of-type { padding-bottom: 4rem; }
 
@@ -141,6 +181,7 @@ h2 {
   font-family: var(--serif);
   font-size: clamp(1.7rem, 3.5vw, 2.2rem);
   line-height: 1.2;
+  color: var(--ink);
 }
 
 .note { max-width: 40rem; margin-top: 0.5rem; color: var(--soft); }
@@ -161,26 +202,35 @@ h2 {
   padding: 1.4rem;
   background: var(--surface);
   border: 1px solid var(--rule);
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(102, 80, 80, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
-.card:hover { border-color: var(--accent); }
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-subtle);
+  box-shadow: 0 8px 18px rgba(162, 144, 183, 0.2);
+}
 
 .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 
 .tags span {
-  padding: 0.1rem 0.5rem;
-  border-radius: 4px;
-  background: var(--tint);
-  color: var(--accent);
+  padding: 0.15rem 0.55rem;
+  border-radius: 6px;
+  background: var(--tint-soft);
+  color: var(--accent-dark);
   font-family: var(--mono);
   font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid rgba(176, 205, 230, 0.6);
 }
 
 .card h3 {
   margin-top: 0.9rem;
   font-size: 1.15rem;
   line-height: 1.35;
+  color: var(--ink);
 }
 
 .text { margin-top: 0.6rem; font-size: 0.95rem; color: var(--soft); }
@@ -189,7 +239,8 @@ h2 {
   margin-top: 0.9rem;
   font-family: var(--mono);
   font-size: 0.78rem;
-  color: var(--soft);
+  color: var(--accent-subtle);
+  font-weight: 500;
 }
 
 .links {
@@ -202,19 +253,29 @@ h2 {
   font-weight: 600;
 }
 
+.links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
 .card .stack { margin-bottom: 0; }
 
 /* The whole theory card is one link, and its title is the link text */
 .proj h3 a { color: var(--ink); text-decoration: none; }
 
-.proj h3 a::after { content: ""; position: absolute; inset: 0; border-radius: 10px; }
+.proj h3 a::after { content: ""; position: absolute; inset: 0; border-radius: 12px; }
 
 .proj:hover h3 a { color: var(--accent); text-decoration: underline; }
 
 /* ---------- Footer ---------- */
 
 .site-footer {
-  padding: 1.75rem 0 2.5rem;
+  padding: 2rem 0 2.5rem;
   border-top: 1px solid var(--rule);
   background: var(--surface);
   font-size: 0.92rem;
@@ -223,7 +284,15 @@ h2 {
 
 .site-footer p + p { margin-top: 0.4rem; }
 
-.site-footer a { margin-right: 1.25rem; }
+.site-footer a {
+  margin-right: 1.25rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
 
 @media (max-width: 36rem) {
   .grid { grid-template-columns: 1fr; }

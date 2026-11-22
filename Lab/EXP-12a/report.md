@@ -1,4 +1,4 @@
----
+﻿---
 title: "Experiment 12: Node.js, Express.js and EJS"
 layout: default
 ---
@@ -6,10 +6,10 @@ layout: default
 # Experiment 12: Node.js, Express.js and EJS
 
 **Course:** Backend Development Lab  
-**Student:** Krish Pawar · B.Tech CSE · SAP ID 590017543 · UPES Dehradun  
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· SAP ID 590018263 Â· UPES Dehradun  
 **Date:** 1 October 2026
 
-**Application:** [`app.js`](./app.js) · **EJS view:** [`views/index.ejs`](./views/index.ejs) · **Stylesheet:** [`public/style.css`](./public/style.css)
+**Application:** [`app.js`](./app.js) Â· **EJS view:** [`views/index.ejs`](./views/index.ejs) Â· **Stylesheet:** [`public/style.css`](./public/style.css)
 
 ## Screenshots
 
@@ -301,4 +301,5 @@ This experiment demonstrates how Node.js and Express can handle web requests and
 
 ---
 
-[← Back to repository index](../../index.md)
+[â† Back to repository index](../../index.md)
+

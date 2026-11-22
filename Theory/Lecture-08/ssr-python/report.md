@@ -1,4 +1,4 @@
----
+﻿---
 title: "Lecture 8: Server-Side Rendering with Python"
 layout: default
 ---
@@ -7,9 +7,9 @@ layout: default
 
 **Course:** Backend Development, Unit 1
 **Lecture:** 8, Server-Side Rendering and Templating Engines
-**Student:** Krish Pawar · B.Tech CSE · SAP ID 590017543 · UPES Dehradun
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· SAP ID 590018263 Â· UPES Dehradun
 
-**Source:** [`main.py`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-08/ssr-python/main.py) · [`templates/home.html`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-08/ssr-python/templates/home.html)
+**Source:** [`main.py`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-08/ssr-python/main.py) Â· [`templates/home.html`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-08/ssr-python/templates/home.html)
 
 ---
 
@@ -108,3 +108,5 @@ content-type: text/html; charset=utf-8
 ## 8. Result
 
 The route sends `name` to the template and the server returns a complete HTML page with `Hello, Aarav!` already inside it, which confirms server-side rendering.
+
+

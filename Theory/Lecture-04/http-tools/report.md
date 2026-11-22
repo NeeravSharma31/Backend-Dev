@@ -1,4 +1,4 @@
----
+﻿---
 title: "Lecture 4: HTTP Requests, DevTools, curl, Postman and fetch"
 layout: default
 ---
@@ -7,9 +7,9 @@ layout: default
 
 **Course:** Backend Development, Unit 1
 **Lecture:** 4, HTTP Requests, DevTools, curl, Postman and fetch (CO1)
-**Student:** Krish Pawar · B.Tech CSE · SAP ID 590017543 · UPES Dehradun
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· SAP ID 590018263 Â· UPES Dehradun
 
-**Source:** [`server.js`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-04/http-tools/server.js) · [`public/app.js`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-04/http-tools/public/app.js) · [`public/index.html`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-04/http-tools/public/index.html) · [Postman collection](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-04/http-tools/postman/Student-Management-API.postman_collection.json)
+**Source:** [`server.js`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-04/http-tools/server.js) Â· [`public/app.js`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-04/http-tools/public/app.js) Â· [`public/index.html`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-04/http-tools/public/index.html) Â· [Postman collection](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-04/http-tools/postman/Student-Management-API.postman_collection.json)
 
 ---
 
@@ -226,7 +226,7 @@ $ curl -v http://localhost:3000/students
 
 ### Task 3 and Exercise 3: Postman
 
-The collection [`Student-Management-API.postman_collection.json`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-04/http-tools/postman/Student-Management-API.postman_collection.json) has two folders:
+The collection [`Student-Management-API.postman_collection.json`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-04/http-tools/postman/Student-Management-API.postman_collection.json) has two folders:
 
 | Folder | Requests |
 |---|---|
@@ -240,51 +240,51 @@ $ npx newman run postman/Student-Management-API.postman_collection.json
 
 Student Management API
 
-❏ Express (port 3000)
-↳ Get All Students
+â Express (port 3000)
+â†³ Get All Students
   GET http://localhost:3000/students [200 OK, 352B, 23ms]
-  ✓  Status code is 200
-  ✓  Response is JSON
-  ✓  Returns at least 3 students
+  âœ“  Status code is 200
+  âœ“  Response is JSON
+  âœ“  Returns at least 3 students
 
-↳ Get Student 2
+â†³ Get Student 2
   GET http://localhost:3000/students/2 [200 OK, 272B, 4ms]
-  ✓  Status code is 200
-  ✓  Student 2 is Diya
+  âœ“  Status code is 200
+  âœ“  Student 2 is Diya
 
-↳ Get Student 3
+â†³ Get Student 3
   GET http://localhost:3000/students/3 [200 OK, 272B, 4ms]
-  ✓  Status code is 200
-  ✓  Student 3 is Rohan (IT)
+  âœ“  Status code is 200
+  âœ“  Student 3 is Rohan (IT)
 
-↳ Get Missing Student
+â†³ Get Missing Student
   GET http://localhost:3000/students/99 [404 Not Found, 271B, 4ms]
-  ✓  Status code is 404
-  ✓  Error message
+  âœ“  Status code is 404
+  âœ“  Error message
 
-↳ Create Student
+â†³ Create Student
   POST http://localhost:3000/students [201 Created, 278B, 11ms]
-  ✓  Status code is 201
-  ✓  Server assigned an id
+  âœ“  Status code is 201
+  âœ“  Server assigned an id
 
-↳ Create Student Without Branch
+â†³ Create Student Without Branch
   POST http://localhost:3000/students [400 Bad Request, 284B, 5ms]
-  ✓  Status code is 400
+  âœ“  Status code is 400
 
-❏ Flask (port 5000)
-↳ Get All Students (Flask)
+â Flask (port 5000)
+â†³ Get All Students (Flask)
   GET http://localhost:5000/students [200 OK, 357B, 4ms]
-  ✓  Status code is 200
-  ✓  Response is JSON
-  ✓  Same 3 students as Express
+  âœ“  Status code is 200
+  âœ“  Response is JSON
+  âœ“  Same 3 students as Express
 
-┌─────────────────────────┬─────────────────┬─────────────────┐
-│                         │        executed │          failed │
-├─────────────────────────┼─────────────────┼─────────────────┤
-│                requests │               7 │               0 │
-├─────────────────────────┼─────────────────┼─────────────────┤
-│              assertions │              15 │               0 │
-└─────────────────────────┴─────────────────┴─────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                         â”‚        executed â”‚          failed â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚                requests â”‚               7 â”‚               0 â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚              assertions â”‚              15 â”‚               0 â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 7 requests, 15 checks, 0 failed. Opening the same file with **Import** in Postman shows the same requests, ready to send with **Send**.
@@ -316,10 +316,10 @@ Keep-Alive: timeout=5
 **Postman (Newman)**
 
 ```text
-↳ Get Student 2
+â†³ Get Student 2
   GET http://localhost:3000/students/2 [200 OK, 272B, 4ms]
-  ✓  Status code is 200
-  ✓  Student 2 is Diya
+  âœ“  Status code is 200
+  âœ“  Student 2 is Diya
 ```
 
 All three got **200 OK** and `{"id":2,"name":"Diya","branch":"ECE"}`, and the ETag in DevTools and curl is the same (`W/"25-gw/rM/..."`), so the body was byte for byte the same. Only the display differs. The request headers did differ: Chrome sent `Accept: text/html,...` and many more headers, curl sent only `Host`, `User-Agent` and `Accept: */*`. The server answered all of them the same way.
@@ -441,3 +441,5 @@ Console output from the `console.log` and `console.error` calls in `app.js`:
 ## 9. Result
 
 The students API was inspected with Chrome DevTools, curl, Postman (run with Newman) and `fetch()`. All tools got the same status codes and data from the server, the Postman collection passed 7 requests and 15 checks with 0 failures, and all five lab exercises were completed with real output.
+
+

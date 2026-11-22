@@ -1,4 +1,4 @@
----
+﻿---
 title: "Lecture 5: FastAPI CRUD API and Course API Lab"
 layout: default
 ---
@@ -7,9 +7,9 @@ layout: default
 
 **Course:** Backend Development, Unit 1
 **Lecture:** 5, RESTful APIs and FastAPI
-**Student:** Krish Pawar · B.Tech CSE · SAP ID 590017543 · UPES Dehradun
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· SAP ID 590018263 Â· UPES Dehradun
 
-**Source:** [`main.py`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-05/fastapi-crud/main.py) (Task 1, students) · [`lab/main.py`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-05/fastapi-crud/lab/main.py) (lab exercise, courses)
+**Source:** [`main.py`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-05/fastapi-crud/main.py) (Task 1, students) Â· [`lab/main.py`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-05/fastapi-crud/lab/main.py) (lab exercise, courses)
 
 ---
 
@@ -371,3 +371,5 @@ $ curl 127.0.0.1:5000/courses/abc
 ## 9. Result
 
 The API supports all five CRUD operations with the correct status codes (200, 201, 204, 404, 422), filters by branch through a query parameter, and documents every endpoint in Swagger UI and ReDoc. The Course API lab repeats all of this for a new resource, adds validation rules with `Field`, and filters by department with `?department=CSE`. All five lab exercises are done and tested in Swagger UI, ReDoc and curl.
+
+

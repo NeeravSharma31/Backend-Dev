@@ -1,4 +1,4 @@
----
+﻿---
 title: "Lecture 3: Express Demo, Tasks 1 to 5 and Lab Exercises"
 layout: default
 ---
@@ -7,9 +7,9 @@ layout: default
 
 **Course:** Backend Development, Unit 1
 **Lecture:** 3, Setting Up the Backend Environment
-**Student:** Krish Pawar · B.Tech CSE · SAP ID 590017543 · UPES Dehradun
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· SAP ID 590018263 Â· UPES Dehradun
 
-**Source:** [`task1` to `task5`, `lab3`](https://github.com/Krish252616/backend-development/tree/main/Theory/Lecture-03/express-demo) · **Shared views:** [`views/`](https://github.com/Krish252616/backend-development/tree/main/Theory/Lecture-03/express-demo/views)
+**Source:** [`task1` to `task5`, `lab3`](https://github.com/NeeravSharma31/Backend-Dev/tree/main/Theory/Lecture-03/express-demo) Â· **Shared views:** [`views/`](https://github.com/NeeravSharma31/Backend-Dev/tree/main/Theory/Lecture-03/express-demo/views)
 
 ---
 
@@ -239,3 +239,5 @@ Steps: open DevTools (`Cmd + Option + I` on macOS, `F12` on Windows) > **Network
 ## 9. Result
 
 All five Express tasks run and return the expected text, JSON, HTML and EJS pages. Task 3 returns the correct `404` status for a missing student, and Task 5 renders its templates no matter which folder the server is started from. Lab 3 filters students by branch in any letter case, and the DevTools screenshots show the full request and response cycle for `GET /students`.
+
+

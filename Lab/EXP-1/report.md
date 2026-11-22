@@ -1,4 +1,4 @@
----
+﻿---
 title: "Experiment 1: Create a web page with all possible elements of HTML5"
 layout: default
 ---
@@ -7,10 +7,10 @@ layout: default
 
 **Course:** Backend Development Lab
 **Course Outcome Mapped:** CO2 (Create and build web pages and applications)
-**Student:** Krish Pawar · B.Tech CSE · UPES Dehradun
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· UPES Dehradun
 **Date:** 22 August 2026
 
-**Live output:** [`index.html`](./index.html) · **Source:** [`index.html`](./index.html)
+**Live output:** [`index.html`](./index.html) Â· **Source:** [`index.html`](./index.html)
 
 ---
 
@@ -117,7 +117,7 @@ the WHATWG. Its three headline shifts were:
 | `password` | Password | Masked characters |
 | `tel` | Phone | Numeric keypad on mobile |
 | `url` | Portfolio URL | Scheme validation |
-| `search` | Search this page | Clear ("×") affordance |
+| `search` | Search this page | Clear ("Ã—") affordance |
 | `number` | Semester | Spinner, `min`/`max` enforcement |
 | `range` | Confidence slider | Slider widget, bound to `<output>` |
 | `date` | Date of birth | Native date picker |
@@ -193,23 +193,23 @@ on disk is never modified.
 
 ```
 document
-└── html (lang="en")
-    ├── head
-    │   ├── meta (charset)
-    │   ├── title  →  "HTML5 Element Specimen: Experiment 1"
-    │   └── style
-    └── body
-        └── div.sheet
-            ├── header.masthead
-            │   ├── h1
-            │   └── nav → ol → li → a  (×9)
-            ├── main
-            │   ├── section#structure
-            │   ├── section#text
-            │   ├── ... (7 more)
-            │   └── section#dom
-            └── footer
-                └── address
+â””â”€â”€ html (lang="en")
+    â”œâ”€â”€ head
+    â”‚   â”œâ”€â”€ meta (charset)
+    â”‚   â”œâ”€â”€ title  â†’  "HTML5 Element Specimen: Experiment 1"
+    â”‚   â””â”€â”€ style
+    â””â”€â”€ body
+        â””â”€â”€ div.sheet
+            â”œâ”€â”€ header.masthead
+            â”‚   â”œâ”€â”€ h1
+            â”‚   â””â”€â”€ nav â†’ ol â†’ li â†’ a  (Ã—9)
+            â”œâ”€â”€ main
+            â”‚   â”œâ”€â”€ section#structure
+            â”‚   â”œâ”€â”€ section#text
+            â”‚   â”œâ”€â”€ ... (7 more)
+            â”‚   â””â”€â”€ section#dom
+            â””â”€â”€ footer
+                â””â”€â”€ address
 ```
 
 **Terminology used in the page's script**
@@ -256,8 +256,8 @@ View Source shows the original file while DevTools shows the live DOM.
 |---|---|
 | Language declared | `<html lang="en">`: tells screen readers which voice to use |
 | Landmark regions | `<header>`, `<nav>`, `<main>`, `<aside>`, `<footer>` |
-| Logical heading order | One `<h1>`, then `h2 → h6` with no skipped levels |
-| Labelled controls | Every input has a `<label for="…">` matching its `id` |
+| Logical heading order | One `<h1>`, then `h2 â†’ h6` with no skipped levels |
+| Labelled controls | Every input has a `<label for="â€¦">` matching its `id` |
 | Grouped controls | Radio and checkbox groups wrapped in `<fieldset>` + `<legend>` |
 | Alternative text | Every `<img>` has a meaningful `alt`; `<svg>` uses `role="img"` + `aria-label` |
 | Captions | `<track kind="captions">` on the video |
@@ -403,4 +403,4 @@ or warnings.
 
 ---
 
-[← Back to repository index](../../readme.md)
+[â† Back to repository index](../../readme.md)

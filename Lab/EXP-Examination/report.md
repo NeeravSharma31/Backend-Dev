@@ -1,4 +1,4 @@
----
+﻿---
 title: "Simple CMS with Express, EJS and MongoDB"
 layout: default
 ---
@@ -7,7 +7,7 @@ layout: default
 
 **Course:** Backend Development Lab
 **Course Outcome Mapped:** CO_ *(fill in from the course handout)*
-**Student:** Krish Pawar, B.Tech CSE, UPES Dehradun
+**Student:** Neerav Kumar Sharma, B.Tech CSE, UPES Dehradun
 **Date:** 30 September 2026
 
 **Source:** [`app.js`](./app.js) and [`views/`](./views)
@@ -110,18 +110,18 @@ The form fields carry `required`, but the browser only checks that the field is 
 
 ```
 cms-lab/
-├── app.js
-├── package.json
-├── views/
-│   ├── posts.ejs
-│   ├── new-post.ejs
-│   ├── post.ejs
-│   ├── error.ejs
-│   └── partials/
-│       ├── header.ejs
-│       └── footer.ejs
-└── public/
-    └── style.css
+â”œâ”€â”€ app.js
+â”œâ”€â”€ package.json
+â”œâ”€â”€ views/
+â”‚   â”œâ”€â”€ posts.ejs
+â”‚   â”œâ”€â”€ new-post.ejs
+â”‚   â”œâ”€â”€ post.ejs
+â”‚   â”œâ”€â”€ error.ejs
+â”‚   â””â”€â”€ partials/
+â”‚       â”œâ”€â”€ header.ejs
+â”‚       â””â”€â”€ footer.ejs
+â””â”€â”€ public/
+    â””â”€â”€ style.css
 ```
 
 ---
@@ -276,3 +276,4 @@ A working Simple CMS was built with Express, EJS and the MongoDB native driver. 
 ---
 
 [Back to repository index](../../../)
+

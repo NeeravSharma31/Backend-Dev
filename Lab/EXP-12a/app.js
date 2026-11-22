@@ -1,4 +1,4 @@
-const express = require("express");
+﻿const express = require("express");
 const path = require("path");
 
 const app = express();
@@ -11,8 +11,8 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 const profile = {
-  name: "Krish Pawar",
-  rollNumber: "590017543",
+  name: "Neerav Kumar Sharma",
+  rollNumber: "590018263",
   branch: "B.Tech Computer Science Engineering"
 };
 
@@ -22,35 +22,35 @@ const tasks = [
     title: "Basic Server",
     summary: "Return student details as plain text, HTML and JSON from Express routes.",
     route: "/task/1",
-    concepts: "Express routes · response formats"
+    concepts: "Express routes Â· response formats"
   },
   {
     id: 2,
     title: "Calculator API",
     summary: "Perform six arithmetic operations with values supplied as query parameters.",
     route: "/task/2",
-    concepts: "Query parameters · JSON API"
+    concepts: "Query parameters Â· JSON API"
   },
   {
     id: 3,
     title: "Student Management",
     summary: "List students, retrieve a student by ID and add a new student.",
     route: "/task/3",
-    concepts: "GET · route parameters · POST"
+    concepts: "GET Â· route parameters Â· POST"
   },
   {
     id: 4,
     title: "EJS Timetable",
     summary: "Render course timetable rows by passing schedule data from Express to EJS.",
     route: "/task/4",
-    concepts: "EJS · server-side data"
+    concepts: "EJS Â· server-side data"
   },
   {
     id: 5,
     title: "Student Registration",
     summary: "Process a registration form and render the submitted values on a result page.",
     route: "/task/5",
-    concepts: "POST body · form handling"
+    concepts: "POST body Â· form handling"
   }
 ];
 
@@ -70,12 +70,12 @@ const courseOptions = [
 ];
 
 const timetable = [
-  { day: "Monday", time: "09:00–10:00", subject: "Backend Development", faculty: "Dr. Ananya Rao" },
-  { day: "Monday", time: "10:15–11:15", subject: "Database Systems", faculty: "Prof. Karan Malhotra" },
-  { day: "Tuesday", time: "11:00–12:00", subject: "Computer Networks", faculty: "Dr. Meera Nair" },
-  { day: "Wednesday", time: "13:00–14:00", subject: "Web Technologies", faculty: "Prof. Dev Shah" },
-  { day: "Thursday", time: "09:00–10:00", subject: "Software Engineering", faculty: "Dr. Ananya Rao" },
-  { day: "Friday", time: "10:15–11:15", subject: "Backend Development Lab", faculty: "Prof. Karan Malhotra" }
+  { day: "Monday", time: "09:00â€“10:00", subject: "Backend Development", faculty: "Dr. Ananya Rao" },
+  { day: "Monday", time: "10:15â€“11:15", subject: "Database Systems", faculty: "Prof. Karan Malhotra" },
+  { day: "Tuesday", time: "11:00â€“12:00", subject: "Computer Networks", faculty: "Dr. Meera Nair" },
+  { day: "Wednesday", time: "13:00â€“14:00", subject: "Web Technologies", faculty: "Prof. Dev Shah" },
+  { day: "Thursday", time: "09:00â€“10:00", subject: "Software Engineering", faculty: "Dr. Ananya Rao" },
+  { day: "Friday", time: "10:15â€“11:15", subject: "Backend Development Lab", faculty: "Prof. Karan Malhotra" }
 ];
 
 
@@ -280,3 +280,4 @@ app.use((req, res) => {
 app.listen(PORT, () => {
   console.log(`Experiment 12 is running at http://localhost:${PORT}`);
 });
+

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Experiment 07 and 08: ES6, DOM Manipulation and Event Handling"
 layout: default
 ---
@@ -6,11 +6,11 @@ layout: default
 # Experiment 07 and 08: ES6, DOM Manipulation and Event Handling
 
 **Course:** Backend Development Lab  
-**Student:** Krish Pawar · B.Tech CSE · SAP ID 590017543 · UPES Dehradun  
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· SAP ID 590018263 Â· UPES Dehradun  
 **Date:** 14 October 2026
 
-**Live pages:** [To-Do app](./index.html) · [Part A: ES6 features](./es6.html) · [Part B and C: DOM and events](./dom-events.html)  
-**Source:** [`app.js`](https://github.com/Krish252616/backend-development/blob/main/LAB/EXP-7-8/app.js) · [`es6.js`](https://github.com/Krish252616/backend-development/blob/main/LAB/EXP-7-8/es6.js) · [`math.js`](https://github.com/Krish252616/backend-development/blob/main/LAB/EXP-7-8/math.js) · [`main.js`](https://github.com/Krish252616/backend-development/blob/main/LAB/EXP-7-8/main.js) · [`dom-events.js`](https://github.com/Krish252616/backend-development/blob/main/LAB/EXP-7-8/dom-events.js)
+**Live pages:** [To-Do app](./index.html) Â· [Part A: ES6 features](./es6.html) Â· [Part B and C: DOM and events](./dom-events.html)  
+**Source:** [`app.js`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Lab/EXP-7-8/app.js) Â· [`es6.js`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Lab/EXP-7-8/es6.js) Â· [`math.js`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Lab/EXP-7-8/math.js) Â· [`main.js`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Lab/EXP-7-8/main.js) Â· [`dom-events.js`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Lab/EXP-7-8/dom-events.js)
 
 ---
 
@@ -343,3 +343,5 @@ ES6 made the code shorter and clearer (arrow functions, template literals, destr
 2. MDN Web Docs: *Introduction to the DOM*. <https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction>
 3. MDN Web Docs: *EventTarget: addEventListener() method*. <https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener>
 4. MDN Web Docs: *JavaScript modules*. <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules>
+
+

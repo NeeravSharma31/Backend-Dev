@@ -1,4 +1,4 @@
----
+﻿---
 title: "Lecture 3: Flask Demo, Tasks 6 and 7 and Lab 4"
 layout: default
 ---
@@ -7,9 +7,9 @@ layout: default
 
 **Course:** Backend Development, Unit 1
 **Lecture:** 3, Setting Up the Backend Environment
-**Student:** Krish Pawar · B.Tech CSE · SAP ID 590017543 · UPES Dehradun
+**Student:** Neerav Kumar Sharma Â· B.Tech CSE Â· SAP ID 590018263 Â· UPES Dehradun
 
-**Source:** [`task6/app.py`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-03/flask-demo/task6/app.py) · [`task7/app.py`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-03/flask-demo/task7/app.py) · [`lab4/app.py`](https://github.com/Krish252616/backend-development/blob/main/Theory/Lecture-03/flask-demo/lab4/app.py)
+**Source:** [`task6/app.py`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-03/flask-demo/task6/app.py) Â· [`task7/app.py`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-03/flask-demo/task7/app.py) Â· [`lab4/app.py`](https://github.com/NeeravSharma31/Backend-Dev/blob/main/Theory/Lecture-03/flask-demo/lab4/app.py)
 
 ---
 
@@ -44,7 +44,7 @@ Open http://127.0.0.1:5000. Press `Ctrl + C` to stop.
 |---|---|---|
 | Check Python | `python3 --version` | `python --version` or `py --version` |
 | Create the virtual environment | `python3 -m venv .venv` | `python -m venv .venv` |
-| Activate it | `source .venv/bin/activate` | Command Prompt: `.venv\Scripts\activate` · PowerShell: `.venv\Scripts\Activate.ps1` |
+| Activate it | `source .venv/bin/activate` | Command Prompt: `.venv\Scripts\activate` Â· PowerShell: `.venv\Scripts\Activate.ps1` |
 | Install packages | `pip install -r requirements.txt` | Same |
 | Run | `python app.py` (inside the venv, `python` points to Python 3) | `python app.py` |
 | Send the Lab 4 POST | `curl -X POST http://127.0.0.1:5000/students -H "Content-Type: application/json" -d '{"name":"Kabir","branch":"CSE"}'` | PowerShell: `Invoke-RestMethod -Method Post -Uri http://127.0.0.1:5000/students -ContentType "application/json" -Body '{"name":"Kabir","branch":"CSE"}'` |
@@ -210,3 +210,5 @@ Lab Exercises 3 and 5 (the Express branch route and the DevTools screenshot) are
 ## 9. Result
 
 Task 6 returns `Backend Server Running`, Task 7 serves the student list and single students as JSON with a proper `404`, and Lab 4 adds students through `POST /students` with `201 Created`, rejecting missing fields with `400 Bad Request`.
+
+
