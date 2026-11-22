@@ -1,0 +1,26 @@
+﻿exclude:
+  # Theory/ holds server projects that cannot run on GitHub Pages.
+  - "Theory/Lecture-*.py"
+  - "Theory/Lecture-*.js"
+  - "Theory/Lecture-*.ejs"
+  - "Theory/Lecture-*.json"
+  - "Theory/Lecture-*.txt"
+  - "Theory/Lecture-*.css"
+  - "Theory/Lecture-*/templates"
+  - "Theory/Lecture-*/views"
+  - "Theory/Lecture-*/static"
+  - "Theory/Lecture-*/public"
+  - "Theory/Lecture-*/node_modules"
+  - "Theory/Lecture-*/venv"
+  - "Theory/Lecture-*/__pycache__"
+  - "Theory/Lecture-*Pipfile*"
+  - Theory/requirements.txt
+  - "Theory/FastAPI/02_ssr_jinja/templates"
+  - "Lab/Exp_15/django_todo_app/todo/templates"
+  - "Lab/Exp_15/django_todo_app/db.sqlite3"
+  - "Lab/Exp_15/django_todo_app/venv"
+  - node_modules/
+  - "**/node_modules/"
+  - "**/venv/"
+  - "**/.venv/"
+  - "**/__pycache__/"

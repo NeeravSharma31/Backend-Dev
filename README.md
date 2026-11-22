@@ -1,30 +1,234 @@
-# Backend Development Course Repository
+﻿<h1 align="center">Backend Development</h1>
 
-A structured curriculum repository containing Theory lectures, architectural demonstrations, and practical Laboratory experiments in Backend Development.
+<p align="center">
+  Coursework repository &nbsp;|&nbsp; B.Tech CSE &nbsp;|&nbsp; UPES Dehradun
+</p>
+
+<p align="center">
+  <a href="https://neeravsharma31.github.io/Backend-Dev/"><img src="https://img.shields.io/badge/Live_site-GitHub_Pages-222222?style=flat-square&logo=githubpages&logoColor=white" alt="Live site"></a>
+  <a href="https://github.com/NeeravSharma31"><img src="https://img.shields.io/badge/Author-Krish_Pawar-0A66C2?style=flat-square&logo=github&logoColor=white" alt="Author"></a>
+  <img src="https://img.shields.io/badge/Lab_experiments-6-2E7D32?style=flat-square" alt="Lab experiments">
+  <img src="https://img.shields.io/badge/Theory_projects-8-B45309?style=flat-square" alt="Theory projects">
+  <img src="https://img.shields.io/badge/Assignments-2-6A1B9A?style=flat-square" alt="Assignments">
+</p>
+
+<p align="center">
+  Lab experiments, theory notes and source code for the Backend Development course.
+</p>
 
 ---
 
-## Theory Modules & Assignments
-
-- **[Comprehensive Theory Lab Report](Theory/Report.md)**
-- **Unit 1 â€” Express.js Architecture & EJS SSR:** [Report](Theory/express_demo/Report.md) | [Code](Theory/express_demo/)
-- **Unit 2 â€” Session & State Management:** [Docs](Theory/Sessions/README.md) | [Code](Theory/Sessions/)
-- **Unit 3 â€” FastAPI REST API & Pydantic:** [Docs](Theory/FastAPI/01_rest_api/README.md) | [Code](Theory/FastAPI/01_rest_api/)
-- **Unit 4 â€” FastAPI SSR with Jinja2:** [Docs](Theory/FastAPI/02_ssr_jinja/README.md) | [Code](Theory/FastAPI/02_ssr_jinja/)
-- **Unit 5 â€” Flask Microservice:** [Docs](Theory/flask/README.md) | [Code](Theory/flask/)
-- **Unit 6 â€” Relational Data Modeling & ORM:** [Docs](Theory/Data_Modeling/README.md) | [Code](Theory/Data_Modeling/)
-- **Assignment 1 â€” Web Storage Notes App (localStorage & sessionStorage):** [Report](Theory/Assignment_1/Report.md) | [Code](Theory/Assignment_1/)
+**Contents:** [Lab experiments](#lab-experiments) Â· [Theory projects](#theory-projects) Â· [Assignments](#assignments) Â· [Repository structure](#repository-structure) Â· [Running the code](#running-the-code) Â· [Tech](#tech)
 
 ---
 
-## Lab Experiments & Examinations
+## Lab experiments
 
-1. **[Exp 1: HTML5 Foundation](Lab/Exp_1/Report.md)**
-2. **[Exp 12: Express.js, EJS Templating & State Management](Lab/Exp_12/Report.md):**
-   - **Part A (Express & EJS):** [Report](Lab/Exp_12/Exp_12_A/Report.md) | [Code](Lab/Exp_12/Exp_12_A/)
-   - **Part B (Sessions & Cookies):** [Report](Lab/Exp_12/Exp_12_B/Report.md) | [Code](Lab/Exp_12/Exp_12_B/)
-3. **[Exp 13: MongoDB & Mongoose](Lab/Exp_13/Report.md)**
-4. **[Exp 15: Django To-Do Application (MVT, SQLite & Static Files)](Lab/Exp_15/Report.md):** [Report](Lab/Exp_15/Report.md) | [Code](Lab/Exp_15/django_todo_app/)
+| # | Experiment | CO | Report | Live output |
+|:---:|---|:---:|:---:|:---:|
+| **1** | Create a web page with all possible elements of HTML5 | `CO2` | [Report](./Lab/EXP-1/report.md) | [Open page](https://neeravsharma31.github.io/Backend-Dev/LAB/EXP-1/index.html) |
+| **2** | Create a web page with all types of Cascading Style Sheets | `CO2` | [Report](./Lab/EXP-2/report.md) | [Open page](https://neeravsharma31.github.io/Backend-Dev/LAB/EXP-2/index.html) |
+| **7, 8** | ES6, DOM manipulation and event handling (To-Do app) | `CO_` | [Report](./Lab/EXP-7-8/report.md) | [Open page](https://neeravsharma31.github.io/Backend-Dev/LAB/EXP-7-8/index.html) |
+| **12** | Node.js, Express.js and EJS (5 tasks) | `CO_` | [Report](./Lab/EXP-12a/report.md) | [Screenshots](./Lab/EXP-12a/report.md#screenshots) |
+| **13a** | User management with MongoDB and Mongoose | `CO_` | [Report](./Lab/EXP-13a/mongoose-demo/report.md) | [Output](./Lab/EXP-13a/mongoose-demo/report.md#7-output) |
+| **Exam** | Simple CMS with Express, EJS and MongoDB | `CO_` | [Report](./Lab/EXP-Examination/report.md) | [Output](./Lab/EXP-Examination/report.md#output) |
+| **15** | Django To-Do Application (MVT, SQLite & Static Files) | `CO_` | [Report](./Lab/Exp_15/Report.md) | [Source](https://github.com/NeeravSharma31/Backend-Dev/tree/main/Lab/Exp_15/django_todo_app) |
+<!-- Add one row per experiment:
+| **14** | Experiment title | `CO_` | [Report](./Lab/EXP-14/report.md) | [Open page](https://neeravsharma31.github.io/Backend-Dev/LAB/EXP-14/index.html) |
+-->
 
-4. **[Lab Exam 01: Simple CMS (Express + EJS + MongoDB)](Lab/Viva_1/Report.md):** [Report](Lab/Viva_1/Report.md) | [Code](Lab/Viva_1/)
+---
+
+## Theory projects
+
+Each lecture folder is named after the lecture it belongs to: `Theory/Lecture-03`, `Theory/Lecture-05`, and so on. Every project has a `report.md` with the code explained, screenshots of the running app, what I learned, and the problems I faced (including Windows vs macOS differences).
+
+| Lecture | Project | Stack | Report | Source |
+|:---:|---|---|:---:|---|
+| **3** | **Express demo** (tasks 1 to 5, labs 3 and 5) | ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![EJS](https://img.shields.io/badge/EJS-B4CA65?style=flat-square&logo=ejs&logoColor=black) | [Report](./Theory/Lecture-03/express-demo/report.md) Â· [Screenshots](./Theory/Lecture-03/express-demo/report.md#5-output) | [`Theory/Lecture-03/express-demo`](./Theory/Lecture-03/express-demo) |
+| **3** | **Flask demo** (tasks 6 and 7, lab 4) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) | [Report](./Theory/Lecture-03/flask-demo/report.md) Â· [Screenshots](./Theory/Lecture-03/flask-demo/report.md#5-output) | [`Theory/Lecture-03/flask-demo`](./Theory/Lecture-03/flask-demo) |
+| **4** | **HTTP tools** (DevTools, curl, Postman, `fetch()`, labs 1 to 5) | ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) | [Report](./Theory/Lecture-04/http-tools/report.md) Â· [Screenshots](./Theory/Lecture-04/http-tools/report.md#5-output) | [`Theory/Lecture-04/http-tools`](./Theory/Lecture-04/http-tools) |
+| **5** | **FastAPI CRUD API** (task 1, Course API lab) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) | [Report](./Theory/Lecture-05/fastapi-crud/report.md) Â· [Screenshots](./Theory/Lecture-05/fastapi-crud/report.md#5-output) | [`Theory/Lecture-05/fastapi-crud`](./Theory/Lecture-05/fastapi-crud) |
+| **6** | **Sessions** | ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) | [Report](./Theory/Lecture-06/sessions/report.md) Â· [Screenshots](./Theory/Lecture-06/sessions/report.md#5-output) | [`Theory/Lecture-06/sessions`](./Theory/Lecture-06/sessions) |
+| **6** | **Cookies and query strings** (security check) | ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) | [Report](./Theory/Lecture-06/cookies-querystrings/report.md) Â· [Screenshots](./Theory/Lecture-06/cookies-querystrings/report.md#5-output) | [`Theory/Lecture-06/cookies-querystrings`](./Theory/Lecture-06/cookies-querystrings) |
+| **8** | **Student Details (SSR)** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Jinja2](https://img.shields.io/badge/Jinja2-B41717?style=flat-square&logo=jinja&logoColor=white) | [Report](./Theory/Lecture-08/student-details/report.md) Â· [Screenshots](./Theory/Lecture-08/student-details/report.md#7-output) | [`Theory/Lecture-08/student-details`](./Theory/Lecture-08/student-details) |
+| **8** | **Server-side rendering with Python** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Jinja2](https://img.shields.io/badge/Jinja2-B41717?style=flat-square&logo=jinja&logoColor=white) | [Report](./Theory/Lecture-08/ssr-python/report.md) Â· [Screenshots](./Theory/Lecture-08/ssr-python/report.md#5-output) | [`Theory/Lecture-08/ssr-python`](./Theory/Lecture-08/ssr-python) |
+
+> **Python dependencies for all Theory projects:** [`Theory/requirements.txt`](./Theory/requirements.txt). Each Node project has its own `package.json`.
+
+---
+
+## Assignments
+
+| # | Assignment | Topic | Report | Source |
+|:---:|---|---|:---:|:---:|
+| **01** | Notes app with localStorage | L07: localStorage, sessionStorage and JSON | [Report](./Theory/ASSIGNMENT_1_notes-app/report.md) | [`Theory/ASSIGNMENT_1_notes-app`](./Theory/ASSIGNMENT_1_notes-app) |
+| **02** | PostgreSQL as SQL + NoSQL: working with JSONB | Unit 2: Database Management | [Report](./Theory/590017543-assignment2.md) | [`Theory/590017543-assignment2.md`](./Theory/590017543-assignment2.md) |
+
+**Assignment 01:** add, edit, delete and complete notes that stay saved after a refresh, plus search, categories, JSON import and export, dark mode and drag to reorder. Frontend only, no server needed. [Live app](https://neeravsharma31.github.io/Backend-Dev/Theory/ASSIGNMENT_1_notes-app/) Â· [Screenshots](./Theory/ASSIGNMENT_1_notes-app/report.md#10-screenshots)
+
+**Assignment 02:** a product catalog with fixed columns and one `jsonb` column, JSONB operators (`->`, `->>`, `@>`, `?`), a GIN index compared on 5 and 200,000 rows, and the same queries in MongoDB. [Index results](./Theory/590017543-assignment2.md#task-6-index-and-compare)
+
+---
+
+## Repository structure
+
+```
+backend-development/
+â”‚
+â”œâ”€â”€ index.html                GitHub Pages homepage
+â”œâ”€â”€ style.css                 styles for the homepage
+â”œâ”€â”€ README.md                 this file
+â”œâ”€â”€ _config.yml               Jekyll settings (publishes Theory reports and screenshots, not the code)
+â”‚
+â”œâ”€â”€ LAB/
+â”‚   â”œâ”€â”€ EXP-1/                HTML5 page and report
+â”‚   â”œâ”€â”€ EXP-2/                Inline, internal and external CSS, selectors, layout, animations
+â”‚   â”œâ”€â”€ EXP-7-8/              ES6, DOM and events: To-Do app and demo pages
+â”‚   â”œâ”€â”€ EXP-12a/              Node.js, Express.js and EJS: 5 tasks
+â”‚   â”œâ”€â”€ EXP-13a/              MongoDB and Mongoose demo
+â”‚   â””â”€â”€ EXP-Examination/      Simple CMS
+â”‚
+â”œâ”€â”€ Theory/
+â”‚   â”œâ”€â”€ Lecture-03/
+â”‚   â”‚   â”œâ”€â”€ express-demo/     Express tasks 1 to 5, lab 3 (each project has report.md and screenshots/)
+â”‚   â”‚   â””â”€â”€ flask-demo/       Flask tasks 6 and 7, lab 4
+â”‚   â”œâ”€â”€ Lecture-04/
+â”‚   â”‚   â””â”€â”€ http-tools/       students API, fetch() page, Postman collection
+â”‚   â”œâ”€â”€ Lecture-05/
+â”‚   â”‚   â””â”€â”€ fastapi-crud/     REST API with FastAPI, lab/ has the Course API
+â”‚   â”œâ”€â”€ Lecture-06/
+â”‚   â”‚   â”œâ”€â”€ sessions/         express-session login
+â”‚   â”‚   â””â”€â”€ cookies-querystrings/  cookie-parser, req.query, security check
+â”‚   â”œâ”€â”€ Lecture-08/
+â”‚   â”‚   â”œâ”€â”€ student-details/  FastAPI + Jinja2 SSR with a form
+â”‚   â”‚   â””â”€â”€ ssr-python/       FastAPI + Jinja2 hello world
+â”‚   â”œâ”€â”€ ASSIGNMENT_1_notes-app/   Assignment 01: notes app and report
+â”‚   â”œâ”€â”€ 590017543-assignment2.md  Assignment 02: PostgreSQL JSONB
+â”‚   â””â”€â”€ requirements.txt      Python packages for the Theory projects
+â”‚
+â””â”€â”€ .gitignore
+```
+
+---
+
+## Running the code
+
+### 1. HTML experiment
+
+```bash
+cd LAB/EXP-1             # or LAB/EXP-2
+open index.html          # macOS. On Windows: start index.html
+```
+
+EXP-7 and 8 uses an ES6 module, which browsers do not load from a double-clicked file, so serve the folder:
+
+```bash
+cd LAB/EXP-7-8
+python3 -m http.server 8000   # Windows: python -m http.server 8000, then open http://localhost:8000
+```
+
+### 2. Lab experiments with a server
+
+EXP-13a and the Simple CMS need MongoDB running. EXP-12a does not.
+
+```bash
+brew services start mongodb-community@8.0   # only for EXP-13a and the Simple CMS
+cd LAB/EXP-Examination                      # or LAB/EXP-12a, LAB/EXP-13a/mongoose-demo
+npm install
+npm start
+```
+
+### 3. Notes app (Assignment 01)
+
+```bash
+cd Theory/ASSIGNMENT_1_notes-app
+open index.html          # macOS. On Windows: start index.html
+```
+
+### 4. Node projects in Theory
+
+```bash
+# Lecture 3: Express tasks
+cd Theory/Lecture-03/express-demo
+npm install
+npm run task3            # any of task1 to task5, or lab3, then open http://localhost:3000
+
+# Lecture 4: HTTP tools
+cd Theory/Lecture-04/http-tools
+npm install
+npm start                # fetch() page at http://localhost:3000, API at /students
+npx newman run postman/Student-Management-API.postman_collection.json   # optional: run the Postman tests
+
+# Lecture 6: sessions
+cd Theory/Lecture-06/sessions
+npm install
+npm start                # then open http://localhost:3000/login
+
+# Lecture 6: cookies and query strings
+cd Theory/Lecture-06/cookies-querystrings
+npm install
+npm run cookies          # http://localhost:3000, or: npm run query
+```
+
+### 5. Python projects in Theory
+
+Create one virtual environment in `Theory/` and install everything once:
+
+```bash
+cd Theory
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Then run any project from its own folder:
+
+| Project | Command | Open |
+|---|---|---|
+| Lecture 3: Flask demo | `cd Lecture-03/flask-demo/task7 && python app.py` (or `task6`, `lab4`) | http://127.0.0.1:5000/students |
+| Lecture 5: FastAPI CRUD API | `cd Lecture-05/fastapi-crud && python main.py` | http://127.0.0.1:5000/docs |
+| Lecture 5: Course API lab | `cd Lecture-05/fastapi-crud/lab && python main.py` | http://127.0.0.1:5000/docs |
+| Lecture 8: Student Details | `cd Lecture-08/student-details && uvicorn main:app --reload` | http://127.0.0.1:8000 |
+| Lecture 8: SSR with Python | `cd Lecture-08/ssr-python && uvicorn main:app --reload` | http://127.0.0.1:8000 |
+
+On macOS, port 5000 may be taken by AirPlay Receiver. If the Flask demo will not start, turn off AirPlay Receiver in System Settings or run it on another port.
+
+---
+
+## Tech
+
+**Frontend**
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+**Node.js stack**
+
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![EJS](https://img.shields.io/badge/EJS-B4CA65?style=for-the-badge&logo=ejs&logoColor=black)
+
+**Databases**
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
+**Python stack**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Jinja2](https://img.shields.io/badge/Jinja2-B41717?style=for-the-badge&logo=jinja&logoColor=white)
+
+**Tools**
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+---
+
+<p align="center">
+  <sub>Krish Pawar &nbsp;|&nbsp; B.Tech CSE, UPES Dehradun</sub>
+</p>
 
