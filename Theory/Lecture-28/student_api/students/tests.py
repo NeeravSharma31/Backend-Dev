@@ -1,4 +1,4 @@
-﻿from unittest.mock import Mock, patch
+from unittest.mock import Mock, patch
 from django.test import SimpleTestCase
 from django.urls import reverse
 import requests

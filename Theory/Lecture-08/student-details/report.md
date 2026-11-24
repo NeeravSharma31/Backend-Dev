@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Lecture 8: Student Details, FastAPI Server-Side Rendering"
 layout: default
 ---

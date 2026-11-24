@@ -1,4 +1,3 @@
-{% raw %}
 # Experiment 15: Django To-Do Application (CRUD & Static Files)
 
 A complete, responsive To-Do application built using the **Django** web framework (Python), **SQLite** database, **MVT (Model-View-Template)** architecture, and **Django Static Files**.
@@ -24,13 +23,13 @@ A complete, responsive To-Do application built using the **Django** web framewor
    - Model registered in `todo/admin.py` with custom list display, search, and filters.
    - Admin account pre-configured (`admin` / `admin123`).
 5. **Lab Assignment Extensions**:
-   - **Static Files**: Serves custom CSS stylesheet (`static/todo/style.css`) using `{% load static %}`.
+   - **Static Files**: Serves custom CSS stylesheet (`static/todo/style.css`) using `&#123;% load static %&#125;`.
    - **Modular Templates**:
      - `base.html`: Common layout with header, navigation, container, and footer.
-     - `navbar.html`: Reusable navigation bar included using `{% include %}`.
-     - `task_list.html` & `add_task.html`: Child templates extending `base.html` using `{% extends %}`.
+     - `navbar.html`: Reusable navigation bar included using `&#123;% include %&#125;`.
+     - `task_list.html` & `add_task.html`: Child templates extending `base.html` using `&#123;% extends %&#125;`.
 6. **CSRF Protection**:
-   - Secure POST forms protected with Django's `{% csrf_token %}`.
+   - Secure POST forms protected with Django's `&#123;% csrf_token %&#125;`.
 7. **Automated Unit Tests**:
    - Comprehensive test suite in `todo/tests.py` covering model creation, all 4 CRUD views, and template rendering.
 
@@ -91,11 +90,10 @@ django_todo_app/
 │   ├── static/todo/            # App static files
 │   │   └── style.css           # Styling
 │   └── templates/todo/         # Modular HTML templates
-│       ├── base.html           # Master layout with {% block content %}
-│       ├── navbar.html         # Modular navigation with {% include %}
+│       ├── base.html           # Master layout with &#123;% block content %&#125;
+│       ├── navbar.html         # Modular navigation with &#123;% include %&#125;
 │       ├── task_list.html      # Task listing view extending base.html
 │       └── add_task.html       # Add task form extending base.html
 └── static/todo/                # Project-level static files
     └── style.css
 ```
-{% endraw %}

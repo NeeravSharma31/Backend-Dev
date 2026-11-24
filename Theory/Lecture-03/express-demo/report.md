@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Lecture 3: Express Demo, Tasks 1 to 5 and Lab Exercises"
 layout: default
 ---

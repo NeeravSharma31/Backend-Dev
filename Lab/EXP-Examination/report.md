@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Simple CMS with Express, EJS and MongoDB"
 layout: default
 ---

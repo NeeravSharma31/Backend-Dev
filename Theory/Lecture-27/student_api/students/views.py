@@ -1,4 +1,4 @@
-﻿from django.http import JsonResponse
+from django.http import JsonResponse
 
 # Sample student dataset for demonstration
 STUDENTS = [

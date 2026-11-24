@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Lecture 4: HTTP Requests, DevTools, curl, Postman and fetch"
 layout: default
 ---

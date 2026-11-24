@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Lecture 28: Integrating Third-Party APIs and Services"
 layout: default
 ---

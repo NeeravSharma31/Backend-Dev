@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Experiment 2: Create a web page with all types of Cascading Style Sheets"
 layout: default
 ---

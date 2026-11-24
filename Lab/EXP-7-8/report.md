@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Experiment 07 and 08: ES6, DOM Manipulation and Event Handling"
 layout: default
 ---

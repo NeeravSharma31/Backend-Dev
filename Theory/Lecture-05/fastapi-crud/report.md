@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Lecture 5: FastAPI CRUD API and Course API Lab"
 layout: default
 ---

@@ -1,7 +1,10 @@
-{% raw %}
 # Backend Development — Theory Modules
 
-Structured collection of backend development topics covering Express.js, state management, FastAPI REST APIs, Jinja2 Server-Side Rendering, Flask microservices, and SQLAlchemy Object-Relational Mapping.
+Structured collection of backend development topics covering Express.js, state management, FastAPI REST APIs, Jinja2 Server-Side Rendering, Flask microservices, Django Middleware & Routing, Third-Party APIs, and SQLAlchemy Object-Relational Mapping.
+
+**Student:** Neerav Kumar Sharma  
+**SAP ID:** 590018263  
+**Institution:** UPES Dehradun  
 
 ---
 
@@ -9,40 +12,30 @@ Structured collection of backend development topics covering Express.js, state m
 
 | Unit | Topic | Framework / Tech | Directory | Report / Documentation |
 |:---:|:---|:---|:---|:---|
-| **01** | **Express Core & SSR** | Node.js, Express, EJS | [`express_demo/`](./express_demo/) | [Express Report](./express_demo/Report.md) |
-| **02** | **Session Management** | Node.js, Express-Session | [`Sessions/`](./Sessions/) | [Sessions README](./Sessions/README.md) |
-| **03** | **FastAPI REST API** | Python, FastAPI, Pydantic | [`FastAPI/01_rest_api/`](./FastAPI/01_rest_api/) | [REST API README](./FastAPI/01_rest_api/README.md) |
-| **04** | **FastAPI Jinja2 SSR** | Python, FastAPI, Jinja2 | [`FastAPI/02_ssr_jinja/`](./FastAPI/02_ssr_jinja/) | [SSR README](./FastAPI/02_ssr_jinja/README.md) |
-| **05** | **Flask Microservice** | Python, Flask | [`flask/`](./flask/) | [Flask README](./flask/README.md) |
-| **06** | **Data Modeling & ORM** | Python, SQLAlchemy, SQLite | [`Data_Modeling/`](./Data_Modeling/) | [ORM README](./Data_Modeling/README.md) |
-| **Assignment 1** | **Web Storage Notes App** | HTML5, CSS3, JS, localStorage, sessionStorage, JSON | [`Assignment_1/`](./Assignment_1/) | [Assignment 1 Report](./Assignment_1/Report.md) |
-
-👉 **Full Lab Report**: [Read the Comprehensive Theory Lab Report](./Report.md)
+| **01** | **Express Core & SSR** | Node.js, Express, EJS | [`Lecture-03/express-demo/`](./Lecture-03/express-demo/) | [Express Report](./Lecture-03/express-demo/report.html) |
+| **02** | **Flask Microservice** | Python, Flask | [`Lecture-03/flask-demo/`](./Lecture-03/flask-demo/) | [Flask Report](./Lecture-03/flask-demo/report.html) |
+| **03** | **HTTP & API Tools** | HTTP, cURL, REST Clients | [`Lecture-04/http-tools/`](./Lecture-04/http-tools/) | [HTTP Tools Report](./Lecture-04/http-tools/report.html) |
+| **04** | **FastAPI REST CRUD** | Python, FastAPI, Pydantic | [`Lecture-05/fastapi-crud/`](./Lecture-05/fastapi-crud/) | [FastAPI Report](./Lecture-05/fastapi-crud/report.html) |
+| **05** | **Sessions & State** | Node.js, Express-Session | [`Lecture-06/sessions/`](./Lecture-06/sessions/) | [Sessions Report](./Lecture-06/sessions/report.html) |
+| **06** | **Cookies & Query Strings** | Node.js, Cookie-Parser | [`Lecture-06/cookies-querystrings/`](./Lecture-06/cookies-querystrings/) | [Cookies Report](./Lecture-06/cookies-querystrings/report.html) |
+| **07** | **FastAPI SSR (HTML/Jinja2)**| Python, FastAPI, Jinja2 | [`Lecture-08/student-details/`](./Lecture-08/student-details/) | [Student Details Report](./Lecture-08/student-details/report.html) |
+| **08** | **Python SSR Prototypes** | Python, Templates | [`Lecture-08/ssr-python/`](./Lecture-08/ssr-python/) | [SSR Python Report](./Lecture-08/ssr-python/report.html) |
+| **27** | **Django Middleware & Routing**| Python, Django 5.x | [`Lecture-27/`](./Lecture-27/) | [Middleware Report](./Lecture-27/report.html) |
+| **28** | **Third-Party APIs & Services**| Python, Django, Requests | [`Lecture-28/`](./Lecture-28/) | [Third-Party APIs Report](./Lecture-28/report.html) |
+| **Data Modeling** | **SQLAlchemy ORM** | Python, SQLAlchemy, SQLite | [`Data_Modeling/`](./Data_Modeling/) | [Data Modeling README](./Data_Modeling/README.md) |
+| **Auth** | **Basic Authentication** | Python, FastAPI, Security | [`Authentication&Authorization/`](./Authentication&Authorization/) | [Auth Code](./Authentication&Authorization/SimpleAuthetication.py) |
+| **Assignment 1** | **Web Storage Notes App** | HTML5, CSS3, JS, localStorage | [`ASSIGNMENT_1_notes-app/`](./ASSIGNMENT_1_notes-app/) | [Notes App Report](./ASSIGNMENT_1_notes-app/report.html) |
+| **Assignment 2** | **PostgreSQL JSONB Optimization**| PostgreSQL, JSONB, NoSQL | [`590018263-assignment2.md`](./590018263-assignment2.md) | [Assignment 2 Report](./590018263-assignment2.html) |
 
 ---
 
-## Windows Quick Start
+## Python Virtual Environment Setup
 
-### 1. Web Storage Notes App (Assignment 1)
-```powershell
-Start-Process "D:\Backend\Backend-Dev\Theory\Assignment_1\index.html"
-```
-
-### 2. Node.js Setup
-```powershell
-cd express_demo
-npm install
-npm run step1 # runs 01_basic_server.js
-npm run step5 # runs 05_ssr_ejs.js
-```
-
-### 3. Python Setup (Virtual Environment)
 ```powershell
 # Create & activate Windows virtual environment
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 
-# Install all Python backend dependencies
+# Install all backend dependencies
 pip install -r requirements.txt
 ```
-{% endraw %}

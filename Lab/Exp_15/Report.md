@@ -1,9 +1,16 @@
-﻿---
+---
 title: "Experiment 15: Django To-Do Application"
 layout: default
 ---
 {% raw %}
-# Lab Report: Experiment 15 â€” Django To-Do Application
+# Lab Report: Experiment 15 — Django To-Do Application
+
+**Course:** Backend Development  
+**Student:** Neerav Kumar Sharma  
+**SAP ID:** 590018263  
+**Institution:** UPES Dehradun  
+
+---
 
 ---
 
@@ -25,7 +32,7 @@ layout: default
 5. To implement complete CRUD operations (Create, Read, Update, Delete) with route parameter handling and CSRF security.
 6. To solve the Lab Assignment Task by integrating:
    - A dedicated `static` directory for serving stylesheets (`style.css`).
-   - Modular, reusable template architecture using `{% extends %}` (template inheritance) and `{% include %}` (sub-template composition).
+   - Modular, reusable template architecture using `&#123;% extends %&#125;` (template inheritance) and `&#123;% include %&#125;` (sub-template composition).
 
 ---
 
@@ -45,9 +52,9 @@ Django abstracts database interactions through its ORM:
 - **QuerySets**: Lazy database queries written in Python (e.g., `Task.objects.all().order_by('-created_at')`, `Task.objects.create(...)`, `task.delete()`).
 
 ### 4.3 Template Modularization and Static Files
-- **Template Inheritance (`{% extends %}`)**: Establishes a master skeleton (`base.html`) containing shared HTML boilerplate, `<head>` elements, and layout containers, with defined `{% block content %}` placeholders overridden by child templates.
-- **Template Inclusion (`{% include %}`)**: Injects standalone sub-components (such as `navbar.html`) into layouts, adhering to the Don't Repeat Yourself (DRY) principle.
-- **Static Files Serving (`{% load static %}`)**: Static assets (CSS, JavaScript, images) are served through `django.contrib.staticfiles`. In development, Django automatically serves files from app-level `static/` folders and directories registered in `STATICFILES_DIRS`.
+- **Template Inheritance (`&#123;% extends %&#125;`)**: Establishes a master skeleton (`base.html`) containing shared HTML boilerplate, `<head>` elements, and layout containers, with defined `&#123;% block content %&#125;` placeholders overridden by child templates.
+- **Template Inclusion (`&#123;% include %&#125;`)**: Injects standalone sub-components (such as `navbar.html`) into layouts, adhering to the Don't Repeat Yourself (DRY) principle.
+- **Static Files Serving (`&#123;% load static %&#125;`)**: Static assets (CSS, JavaScript, images) are served through `django.contrib.staticfiles`. In development, Django automatically serves files from app-level `static/` folders and directories registered in `STATICFILES_DIRS`.
 
 ---
 
@@ -109,32 +116,32 @@ Django abstracts database interactions through its ORM:
 
 ```text
 django_todo_app/
-â”œâ”€â”€ manage.py                   # Django CLI administrative entry point
-â”œâ”€â”€ db.sqlite3                  # Relational SQLite database file
-â”œâ”€â”€ todo_project/               # Main configuration package
-â”‚   â”œâ”€â”€ __init__.py             # Python package marker
-â”‚   â”œâ”€â”€ asgi.py                 # ASGI configuration for async deployment
-â”‚   â”œâ”€â”€ settings.py             # Global settings (INSTALLED_APPS, DATABASES, STATIC)
-â”‚   â”œâ”€â”€ urls.py                 # Top-level routing delegating to todo.urls
-â”‚   â””â”€â”€ wsgi.py                 # WSGI configuration for production deployment
-â”œâ”€â”€ todo/                       # Application module
-â”‚   â”œâ”€â”€ admin.py                # Admin site model registration
-â”‚   â”œâ”€â”€ apps.py                 # App configuration class
-â”‚   â”œâ”€â”€ models.py               # Data schema definition (Task model)
-â”‚   â”œâ”€â”€ tests.py                # Automated unit tests for models & views
-â”‚   â”œâ”€â”€ urls.py                 # App-level URL routes
-â”‚   â”œâ”€â”€ views.py                # View handlers (CRUD operations)
-â”‚   â”œâ”€â”€ migrations/             # Database migration files
-â”‚   â”‚   â””â”€â”€ 0001_initial.py
-â”‚   â”œâ”€â”€ static/todo/            # App static assets
-â”‚   â”‚   â””â”€â”€ style.css           # Custom CSS styling
-â”‚   â””â”€â”€ templates/todo/         # Modular Django templates
-â”‚       â”œâ”€â”€ base.html           # Master layout with {% block content %}
-â”‚       â”œâ”€â”€ navbar.html         # Navigation bar loaded via {% include %}
-â”‚       â”œâ”€â”€ task_list.html      # Task listing page extending base.html
-â”‚       â””â”€â”€ add_task.html       # Task creation form extending base.html
-â””â”€â”€ static/todo/                # Project-level static directory
-    â””â”€â”€ style.css
+├── manage.py                   # Django CLI administrative entry point
+├── db.sqlite3                  # Relational SQLite database file
+├── todo_project/               # Main configuration package
+│   ├── __init__.py             # Python package marker
+│   ├── asgi.py                 # ASGI configuration for async deployment
+│   ├── settings.py             # Global settings (INSTALLED_APPS, DATABASES, STATIC)
+│   ├── urls.py                 # Top-level routing delegating to todo.urls
+│   └── wsgi.py                 # WSGI configuration for production deployment
+├── todo/                       # Application module
+│   ├── admin.py                # Admin site model registration
+│   ├── apps.py                 # App configuration class
+│   ├── models.py               # Data schema definition (Task model)
+│   ├── tests.py                # Automated unit tests for models & views
+│   ├── urls.py                 # App-level URL routes
+│   ├── views.py                # View handlers (CRUD operations)
+│   ├── migrations/             # Database migration files
+│   │   └── 0001_initial.py
+│   ├── static/todo/            # App static assets
+│   │   └── style.css           # Custom CSS styling
+│   └── templates/todo/         # Modular Django templates
+│       ├── base.html           # Master layout with &#123;% block content %&#125;
+│       ├── navbar.html         # Navigation bar loaded via &#123;% include %&#125;
+│       ├── task_list.html      # Task listing page extending base.html
+│       └── add_task.html       # Task creation form extending base.html
+└── static/todo/                # Project-level static directory
+    └── style.css
 ```
 
 ---
@@ -230,18 +237,18 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 ```
 
 ### 8.2 Modular Templates (`extend` and `include`)
-- **Master Layout (`base.html`)**: Defines HTML structure, links the static stylesheet via `{% static 'todo/style.css' %}`, and includes the navigation bar via:
+- **Master Layout (`base.html`)**: Defines HTML structure, links the static stylesheet via `&#123;% static 'todo/style.css' %&#125;`, and includes the navigation bar via:
   ```html
-  {% load static %}
+  &#123;% load static %&#125;
   ...
-  <link rel="stylesheet" href="{% static 'todo/style.css' %}">
-  {% include 'todo/navbar.html' %}
+  <link rel="stylesheet" href="&#123;% static 'todo/style.css' %&#125;">
+  &#123;% include 'todo/navbar.html' %&#125;
   <main class="container">
-      {% block content %}{% endblock %}
+      &#123;% block content %&#125;&#123;% endblock %&#125;
   </main>
   ```
 - **Modular Component (`navbar.html`)**: Included across all pages to render consistent navigation and admin shortcuts.
-- **Child Views (`task_list.html` & `add_task.html`)**: Inherit the master layout via `{% extends 'todo/base.html' %}` and provide specific page content inside `{% block content %}`.
+- **Child Views (`task_list.html` & `add_task.html`)**: Inherit the master layout via `&#123;% extends 'todo/base.html' %&#125;` and provide specific page content inside `&#123;% block content %&#125;`.
 
 ---
 
@@ -255,7 +262,7 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 | **Update (Toggle)** | `GET` | `http://127.0.0.1:8000/toggle/<id>/` | Inverts `completed` boolean flag (`False` $\leftrightarrow$ `True`), saves to database, and redirects. | `302 Found` |
 | **Delete** | `GET` | `http://127.0.0.1:8000/delete/<id>/` | Deletes record from SQLite and refreshes list without the removed item. | `302 Found` |
 | **Django Admin** | `GET` | `http://127.0.0.1:8000/admin/` | Allows administrative login, filtering tasks by completion/date, and inline editing. | `200 OK` |
-| **Unit Tests** | CLI | `python manage.py test` | 6 tests ran in 0.038s â€” all models, views, and template inclusions passed (`OK`). | Passed |
+| **Unit Tests** | CLI | `python manage.py test` | 6 tests ran in 0.038s — all models, views, and template inclusions passed (`OK`). | Passed |
 
 ---
 
@@ -263,7 +270,7 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 
 1. **CSRF Protection on POST Forms**:
    - *Challenge*: Submitting the add task form without CSRF verification triggered a `403 Forbidden: CSRF verification failed` error.
-   - *Solution*: Embedded `{% csrf_token %}` inside `<form method="post">` in `add_task.html`, which generates a hidden cryptographic token validated by Django's `CsrfViewMiddleware`.
+   - *Solution*: Embedded `&#123;% csrf_token %&#125;` inside `<form method="post">` in `add_task.html`, which generates a hidden cryptographic token validated by Django's `CsrfViewMiddleware`.
 
 2. **Template Directory Precedence**:
    - *Challenge*: Placing templates in a generic `templates/` folder without namespacing can lead to collisions when multiple apps define templates with identical names.
@@ -271,5 +278,5 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 
 3. **Static File Resolution**:
    - *Challenge*: Static files failed to load when templates were accessed outside the default root.
-   - *Solution*: Configured both app-level `todo/static/todo/` directory and project-level `STATICFILES_DIRS = [BASE_DIR / 'static']` in `settings.py`, and loaded files with `{% load static %}`.
+   - *Solution*: Configured both app-level `todo/static/todo/` directory and project-level `STATICFILES_DIRS = [BASE_DIR / 'static']` in `settings.py`, and loaded files with `&#123;% load static %&#125;`.
 {% endraw %}

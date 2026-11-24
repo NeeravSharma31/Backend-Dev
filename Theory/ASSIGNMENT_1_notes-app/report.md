@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Assignment 01: Notes App with localStorage"
 layout: default
 ---
@@ -8,7 +8,7 @@ layout: default
 **Course:** Backend Development, Unit 1
 **Lecture:** L07, LocalStorage, SessionStorage and JSON
 **Task:** Section 12, Final Task: Build a Notes App
-**Student:** Neerav
+**Student:** Neerav Kumar Sharma
 **SAP ID:** 590018263
 
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Lecture 6: Cookies and Query Strings"
 layout: default
 ---

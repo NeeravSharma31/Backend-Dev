@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Lecture 6: Sessions with express-session"
 layout: default
 ---

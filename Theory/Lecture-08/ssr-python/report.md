@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Lecture 8: Server-Side Rendering with Python"
 layout: default
 ---

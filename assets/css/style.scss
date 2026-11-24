@@ -1,0 +1,52 @@
+---
+---
+@import "{{ site.theme }}";
+
+body {
+  background-color: #FDF4D2 !important;
+  color: #322525 !important;
+}
+
+.main-content {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(102, 80, 80, 0.08);
+  border: 1px solid #e8dcb8;
+  max-width: 64rem;
+  margin: 2rem auto;
+}
+
+a {
+  color: #946D6D !important;
+}
+
+a:hover {
+  color: #785252 !important;
+}
+
+.page-header {
+  background-color: #946D6D !important;
+  background-image: linear-gradient(120deg, #946D6D, #A290B7) !important;
+  color: #FDF4D2 !important;
+}
+
+.project-name, .project-tagline {
+  color: #FDF4D2 !important;
+}
+
+.btn {
+  color: #ffffff !important;
+  background-color: #946D6D !important;
+  border-color: #785252 !important;
+}
+
+.btn:hover {
+  background-color: #785252 !important;
+}
+
+code {
+  background-color: rgba(176, 205, 230, 0.25) !important;
+  color: #785252 !important;
+  border-radius: 4px;
+}

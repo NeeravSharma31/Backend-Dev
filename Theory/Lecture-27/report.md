@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Lecture 27: Django Middleware and URL Routing"
 layout: default
 ---

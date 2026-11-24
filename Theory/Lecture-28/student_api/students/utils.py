@@ -1,4 +1,4 @@
-﻿import requests
+import requests
 
 EXTERNAL_API_URL = "https://jsonplaceholder.typicode.com/posts/{post_id}"
 

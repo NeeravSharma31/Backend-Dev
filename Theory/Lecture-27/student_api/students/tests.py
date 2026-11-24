@@ -1,4 +1,4 @@
-﻿from django.test import TestCase
+from django.test import TestCase
 from django.urls import reverse
 
 class StudentRoutingAndMiddlewareTests(TestCase):

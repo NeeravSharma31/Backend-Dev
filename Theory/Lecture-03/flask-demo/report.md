@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Lecture 3: Flask Demo, Tasks 6 and 7 and Lab 4"
 layout: default
 ---

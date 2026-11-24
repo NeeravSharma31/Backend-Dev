@@ -29,7 +29,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 # A real app would read this from a database.
 
 students = [
-    {"name": "Krish Pawar", "sap_id": "590017543", "batch": "B.Tech CSE Core 5"},
+    {"name": "Neerav Kumar Sharma", "sap_id": "590018263", "batch": "B.Tech CSE Core 5"},
     {"name": "Divyansh Panwar", "sap_id": "590018990", "batch": "B.Tech CSE Core 5"},
 ]
 

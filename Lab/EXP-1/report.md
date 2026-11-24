@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Experiment 1: Create a web page with all possible elements of HTML5"
 layout: default
 ---

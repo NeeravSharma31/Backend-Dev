@@ -1,4 +1,4 @@
-﻿<h1 align="center">Backend Development</h1>
+<h1 align="center">Backend Development</h1>
 
 <p align="center">
   Coursework repository &nbsp;|&nbsp; B.Tech CSE &nbsp;|&nbsp; UPES Dehradun

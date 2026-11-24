@@ -1,5 +1,19 @@
-﻿exclude:
-  # Theory/ holds server projects that cannot run on GitHub Pages.
+title: "Backend Development Coursework"
+description: "Coursework, laboratory reports, assignments, and backend prototypes for Backend Development."
+author: "Neerav Kumar Sharma"
+sap_id: "590018263"
+theme: jekyll-theme-primer
+
+exclude:
+  # Django app source and templates (handled by Django, not Jekyll)
+  - "Lab/Exp_15/django_todo_app"
+  - "node_modules/"
+  - "**/node_modules/"
+  - "**/venv/"
+  - "**/.venv/"
+  - "**/__pycache__/"
+  - "package-lock.json"
+  - "Theory/requirements.txt"
   - "Theory/Lecture-*.py"
   - "Theory/Lecture-*.js"
   - "Theory/Lecture-*.ejs"
@@ -14,13 +28,3 @@
   - "Theory/Lecture-*/venv"
   - "Theory/Lecture-*/__pycache__"
   - "Theory/Lecture-*Pipfile*"
-  - Theory/requirements.txt
-  - "Theory/FastAPI/02_ssr_jinja/templates"
-  - "Lab/Exp_15/django_todo_app/todo/templates"
-  - "Lab/Exp_15/django_todo_app/db.sqlite3"
-  - "Lab/Exp_15/django_todo_app/venv"
-  - node_modules/
-  - "**/node_modules/"
-  - "**/venv/"
-  - "**/.venv/"
-  - "**/__pycache__/"

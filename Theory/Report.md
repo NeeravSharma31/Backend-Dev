@@ -155,7 +155,7 @@ uvicorn main:app --reload --port 5000
 - To enforce robust server-side validation against duplicate inputs and malformed identifiers.
 
 ## 4. Theory
-- **Jinja2 Templating**: Templates interpolate variables (`{{ student.name }}`), iterate over collections (`{% for %}`), and handle fallback states (`{% else %}`).
+- **Jinja2 Templating**: Templates interpolate variables (`&#123;&#123; student.name &#125;&#125;`), iterate over collections (`&#123;% for %&#125;`), and handle fallback states (`&#123;% else %&#125;`).
 - **Static Assets**: Stylesheets and images are served via `app.mount("/static", StaticFiles(directory="static"))`. The template resolves these paths using `url_for('static', path='style.css')`.
 - **Post-Redirect-Get (PRG)**: When submitting a POST form, returning a direct HTML response allows duplicate submissions if the user refreshes. Redirecting with HTTP `303 See Other` to `/students` guarantees clean idempotent browser navigation.
 - **Two-Tier Validation**: Client-side HTML5 attributes (`required`, `pattern`) improve UX, but server-side validation is strictly enforced because HTTP requests can be crafted or manipulated independently.
