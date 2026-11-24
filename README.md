@@ -8,7 +8,7 @@
   <a href="https://neeravsharma31.github.io/Backend-Dev/"><img src="https://img.shields.io/badge/Live_site-GitHub_Pages-222222?style=flat-square&logo=githubpages&logoColor=white" alt="Live site"></a>
   <a href="https://github.com/NeeravSharma31"><img src="https://img.shields.io/badge/Author-Neerav_Kumar_Sharma-0A66C2?style=flat-square&logo=github&logoColor=white" alt="Author"></a>
   <img src="https://img.shields.io/badge/Lab_experiments-6-2E7D32?style=flat-square" alt="Lab experiments">
-  <img src="https://img.shields.io/badge/Theory_projects-8-B45309?style=flat-square" alt="Theory projects">
+  <img src="https://img.shields.io/badge/Theory_projects-10-B45309?style=flat-square" alt="Theory projects">
   <img src="https://img.shields.io/badge/Assignments-2-6A1B9A?style=flat-square" alt="Assignments">
 </p>
 
@@ -231,6 +231,7 @@ On macOS, port 5000 may be taken by AirPlay Receiver. If the Flask demo will not
 <p align="center">
   <sub>Neerav Kumar Sharma &nbsp;|&nbsp; B.Tech CSE, UPES Dehradun</sub>
 </p>
+
 
 
 
