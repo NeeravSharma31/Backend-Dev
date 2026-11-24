@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  student-portal-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: neeravsharma31/pbl-student-portal:latest
+    container_name: pbl_student_portal
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - LOG_LEVEL=info
+      - PORT=8000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s

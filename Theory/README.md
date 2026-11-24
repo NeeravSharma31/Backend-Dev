@@ -1,6 +1,6 @@
 # Backend Development — Theory Modules
 
-Structured collection of backend development topics covering Express.js, state management, FastAPI REST APIs, Jinja2 Server-Side Rendering, Flask microservices, Django Middleware & Routing, Third-Party APIs, and SQLAlchemy Object-Relational Mapping.
+Structured collection of backend development topics covering Express.js, state management, FastAPI REST APIs, Jinja2 Server-Side Rendering, Flask microservices, Django Middleware & Routing, Third-Party APIs, Docker Containerization, GitHub Actions CI/CD, Horizontal Scaling, Nginx Load Balancing, and Project-Based Learning (PBL).
 
 **Student:** Neerav Kumar Sharma  
 **SAP ID:** 590018263  
@@ -22,6 +22,8 @@ Structured collection of backend development topics covering Express.js, state m
 | **08** | **Python SSR Prototypes** | Python, Templates | [`Lecture-08/ssr-python/`](./Lecture-08/ssr-python/) | [SSR Python Report](./Lecture-08/ssr-python/report.html) |
 | **27** | **Django Middleware & Routing**| Python, Django 5.x | [`Lecture-27/`](./Lecture-27/) | [Middleware Report](./Lecture-27/report.html) |
 | **28** | **Third-Party APIs & Services**| Python, Django, Requests | [`Lecture-28/`](./Lecture-28/) | [Third-Party APIs Report](./Lecture-28/report.html) |
+| **Unit 4**| **Docker, CI/CD & Scaling** | Docker, Actions, Nginx | [`Lecture-Docker-CI-CD/`](./Lecture-Docker-CI-CD/) | [Docker & Scaling Report](./Lecture-Docker-CI-CD/report.html) |
+| **PBL** | **PBL: Containerization & CI/CD** | FastAPI, Docker Compose, Actions | [`pbl/`](./pbl/) | [PBL Report](./pbl/report.html) |
 | **Data Modeling** | **SQLAlchemy ORM** | Python, SQLAlchemy, SQLite | [`Data_Modeling/`](./Data_Modeling/) | [Data Modeling README](./Data_Modeling/README.md) |
 | **Auth** | **Basic Authentication** | Python, FastAPI, Security | [`Authentication&Authorization/`](./Authentication&Authorization/) | [Auth Code](./Authentication&Authorization/SimpleAuthetication.py) |
 | **Assignment 1** | **Web Storage Notes App** | HTML5, CSS3, JS, localStorage | [`ASSIGNMENT_1_notes-app/`](./ASSIGNMENT_1_notes-app/) | [Notes App Report](./ASSIGNMENT_1_notes-app/report.html) |
@@ -34,7 +36,7 @@ Structured collection of backend development topics covering Express.js, state m
 ```powershell
 # Create & activate Windows virtual environment
 python -m venv venv
-.\venv\Scripts\Activate.ps1
+.\\venv\\Scripts\\Activate.ps1
 
 # Install all backend dependencies
 pip install -r requirements.txt
