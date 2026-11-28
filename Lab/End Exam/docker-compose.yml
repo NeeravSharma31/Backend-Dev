@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  todo-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: todo-app:v1
+    container_name: todo-app
+    ports:
+      - "8080:3000"
+    volumes:
+      # Persistent host volume mapping
+      # Host ./docker-data is mounted to container /app/data
+      - ./docker-data:/app/data
+    environment:
+      - PORT=3000
+      - DATA_DIR=/app/data
+      - NODE_ENV=production
+    restart: unless-stopped

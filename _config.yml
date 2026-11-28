@@ -7,6 +7,13 @@ theme: jekyll-theme-primer
 exclude:
   # Exclude non-Jekyll backend source code and runtime assets
   - "Lab/Exp_15/django_todo_app"
+  - "Lab/End Exam/node_modules"
+  - "Lab/End Exam/docker-data"
+  - "Lab/End Exam/Dockerfile"
+  - "Lab/End Exam/docker-compose.yml"
+  - "Lab/End Exam/*.js"
+  - "Lab/End Exam/views"
+  - "Lab/End Exam/public"
   - "Theory/pbl/*.py"
   - "Theory/pbl/Dockerfile"
   - "Theory/pbl/docker-compose.yml"
